@@ -1,0 +1,10 @@
+# Jekyll Config
+
+# Site settings
+title: Tanner Krewson
+description: I try to do cool things when I can.
+email: tannerkrewson@gmail.com
+github_username:  tannerkrewson
+
+# Build settings
+markdown: kramdown
