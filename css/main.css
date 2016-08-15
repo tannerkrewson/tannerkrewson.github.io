@@ -3,6 +3,7 @@
 
 body {
   padding-top: 5rem;
+  padding-bottom: 2rem;
   text-align: center;
 }
 .fulltitle {
@@ -21,6 +22,10 @@ body {
   -o-transition: all 0.7s ease-in-out;
   -ms-transition: all 0.7s ease-in-out;
   transition: all 0.7s ease-in-out;
+}
+.card-title {
+  font-size: 2rem;
+  font-weight: 300;
 }
 
 
