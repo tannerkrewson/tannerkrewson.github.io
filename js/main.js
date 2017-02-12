@@ -1,4 +1,3 @@
-
 $(".title").typed({
 	strings: ["Hi, I'm Tanner."],
 	typeSpeed: 100,
