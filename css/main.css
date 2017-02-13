@@ -37,6 +37,10 @@ body {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
+.subheading {
+  font-size: 2rem;
+  font-weight: 350;
+}
 
 
 /* Typed.js */
