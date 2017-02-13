@@ -2,7 +2,6 @@
 /* Main */
 
 body {
-  padding-top: 5rem;
   padding-bottom: 2rem;
   text-align: center;
 }
@@ -32,6 +31,11 @@ body {
 }
 .btn-secondary {
   margin-bottom: 5px;
+}
+.profile {
+  height: 160px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 
