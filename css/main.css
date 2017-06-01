@@ -42,6 +42,9 @@ body {
   font-size: 2rem;
   font-weight: 350;
 }
+.non-existant {
+  display: none;
+}
 
 
 /* Typed.js */
