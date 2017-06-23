@@ -10,6 +10,8 @@ body {
 }
 .content {
   opacity: 0;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 .subtitle {
   opacity: 0;
@@ -27,7 +29,9 @@ body {
   font-weight: 300;
 }
 .card-col {
-  padding-bottom: 15px;
+  padding-bottom: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
   display: flex;
 }
 .btn-secondary {
