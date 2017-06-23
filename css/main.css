@@ -28,6 +28,7 @@ body {
 }
 .card-col {
   padding-bottom: 15px;
+  display: flex;
 }
 .btn-secondary {
   margin-bottom: 5px;
@@ -44,6 +45,17 @@ body {
 }
 .non-existant {
   display: none;
+}
+.card {
+  align-items: stretch;
+}
+.card-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.card-buttons {
+  justify-content: flex-start;
 }
 
 
