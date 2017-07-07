@@ -5,13 +5,15 @@ body {
   padding-bottom: 2rem;
   text-align: center;
   color: white;
-  background-image:
+  background-color: transparent;
+}
+html {
+  background:
     linear-gradient(
       to top left, 
       #FF14C5, #D30CFF, #8B14FF
-    );
+    ) fixed;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 .fulltitle {
   padding: 1rem 1.5rem;
