@@ -1,3 +1,5 @@
+$('#footer-year').text((new Date()).getFullYear());
+
 $(".title").typed({
 	strings: ["Hi, I'm Tanner."],
 	typeSpeed: 100,
