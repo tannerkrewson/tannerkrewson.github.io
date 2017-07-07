@@ -11,7 +11,9 @@ $(".title").typed({
 
 		// if it has less than an 11ms delay, the fade
 		// animation won't play
-		setTimeout(showSubtitle, 11);
+		// 11ms would only work sometimes, so I made
+		// it hire
+		setTimeout(showSubtitle, 30);
 	}
 });
 
