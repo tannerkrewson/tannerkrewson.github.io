@@ -4,6 +4,14 @@
 body {
   padding-bottom: 2rem;
   text-align: center;
+  color: white;
+  background-image:
+    linear-gradient(
+      to top left, 
+      #FF14C5, #D30CFF, #8B14FF
+    );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .fulltitle {
   padding: 1rem 1.5rem;
@@ -50,8 +58,10 @@ body {
 .non-existant {
   display: none;
 }
-.card {
+.card { 
   align-items: stretch;
+  background-color: transparent;
+  border: 3px solid white;
 }
 .card-block {
   display: flex;
@@ -60,6 +70,18 @@ body {
 }
 .card-buttons {
   justify-content: flex-start;
+}
+.btn {
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+}
+a, a:active, a:visited { 
+    color: white;
+    text-decoration: underline;
+}
+a:hover {
+    color: grey;
 }
 
 
