@@ -2,11 +2,12 @@
 
 # Site settings
 title: Tanner Krewson
-description: When I have a problem, I write a program to solve it.
+description: Software Engineer Intern at ESPN, Drawphone, Spyout, Connect 4, Lansite, and more
 email: tannerkrewson@gmail.com
 github_username:  tannerkrewson
 linkedin_username: tannerkrewson
 facebook_username: tannermkrewson
+snapchat_username: tannerkrewson
 
 # Build settings
 markdown: kramdown
