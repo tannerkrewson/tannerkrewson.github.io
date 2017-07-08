@@ -40,6 +40,10 @@ body {
   font-size: 2rem;
   font-weight: 300;
 }
+.card-subtitle {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
 .card-col {
   padding-bottom: 16px;
   padding-left: 8px;
@@ -88,6 +92,9 @@ a:hover {
 }
 .title-link {
     text-decoration: underline;
+}
+.espn-logo {
+    max-width: 75%;
 }
 
 
