@@ -5,19 +5,19 @@ body {
   padding-bottom: 2rem;
   text-align: center;
   color: white;
-  background-color: transparent;
 }
-html {
+.gradient-background {
   background:
     linear-gradient(
       to top left,
       #FF14C5, #D30CFF, #8B14FF
     ) fixed;
   background-repeat: no-repeat;
-}
-html, body {
-    margin: 0;
-    height: 100%;
+  width: 100%;
+  top: -80px;
+  bottom: -80px;
+  position: fixed;
+  z-index: -1;
 }
 .fulltitle {
   padding: 1rem 1.5rem;
