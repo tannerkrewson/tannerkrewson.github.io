@@ -8,10 +8,8 @@ body {
 }
 .gradient-background {
   background:
-    linear-gradient(
-      to top left,
-      #FF14C5, #D30CFF, #8B14FF
-    ) fixed;
+    radial-gradient(circle farthest-corner at 32% 106%, rgb(250, 160, 55) 10%, rgb(235, 65, 65) 28%, transparent 82%),
+    linear-gradient(135deg, rgb(35, 75, 215) 12%, rgb(195, 60, 190) 58%);
   background-repeat: no-repeat;
   width: 100%;
   top: -80px;
