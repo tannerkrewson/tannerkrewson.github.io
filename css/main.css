@@ -10,10 +10,14 @@ body {
 html {
   background:
     linear-gradient(
-      to top left, 
+      to top left,
       #FF14C5, #D30CFF, #8B14FF
     ) fixed;
   background-repeat: no-repeat;
+}
+html, body {
+    margin: 0;
+    height: 100%;
 }
 .fulltitle {
   padding: 1rem 1.5rem;
@@ -60,7 +64,7 @@ html {
 .non-existant {
   display: none;
 }
-.card { 
+.card {
   align-items: stretch;
   background-color: transparent;
   border: 3px solid white;
@@ -78,7 +82,7 @@ html {
     background-color: transparent;
     color: white;
 }
-a, a:active, a:visited { 
+a, a:active, a:visited {
     color: white;
 }
 a:hover {
