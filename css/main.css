@@ -21,12 +21,8 @@ body {
   padding: 1rem 1.5rem;
 }
 .content {
-  opacity: 0;
   padding-left: 8px;
   padding-right: 8px;
-}
-.subtitle {
-  opacity: 0;
 }
 .fade {
   opacity: 1;
@@ -63,8 +59,11 @@ body {
   font-size: 2rem;
   font-weight: 350;
 }
+.to-fade {
+  opacity: 0;
+}
 .non-existant {
-  display: none;
+    display: none;
 }
 .card {
   align-items: stretch;
