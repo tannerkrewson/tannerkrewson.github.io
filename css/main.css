@@ -66,14 +66,15 @@ body {
     display: none;
 }
 .card {
-  align-items: stretch;
   background-color: transparent;
   border: 3px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .card-block {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
+  padding: 1.25rem;
 }
 .card-buttons {
   justify-content: flex-start;
