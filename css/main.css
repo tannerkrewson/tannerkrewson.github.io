@@ -102,6 +102,9 @@ a:hover {
 .display-4 {
     font-family: 'Lato', sans-serif;
 }
+span.avoidwrap {
+    display: inline-block;
+}
 
 
 /* Typed.js */
