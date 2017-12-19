@@ -18,6 +18,7 @@ body {
 }
 .fulltitle {
   padding: 1rem 1.5rem;
+  font-size: 1.25rem;
 }
 .content {
   padding-left: 8px;
@@ -78,6 +79,9 @@ body {
 .card-buttons {
   justify-content: flex-start;
 }
+.card-title {
+    font-family: 'Lato', sans-serif;
+}
 .btn {
     border: 2px solid white;
     background-color: transparent;
@@ -94,6 +98,9 @@ a:hover {
 }
 .espn-logo {
     max-width: 75%;
+}
+.display-4 {
+    font-family: 'Lato', sans-serif;
 }
 
 
