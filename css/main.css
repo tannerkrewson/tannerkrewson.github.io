@@ -37,8 +37,7 @@ body {
   font-weight: 300;
 }
 .card-subtitle {
-  font-size: 1.25rem;
-  font-weight: 300;
+  font-family: 'Lato', sans-serif;
 }
 .card-col {
   padding-bottom: 16px;
@@ -71,6 +70,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 .card-block {
   justify-content: center;
