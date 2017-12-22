@@ -108,6 +108,9 @@ span.avoidwrap {
 b {
     font-weight: bold;
 }
+li {
+    margin-bottom: 8px;
+}
 
 
 /* Typed.js */
