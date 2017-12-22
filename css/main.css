@@ -105,6 +105,9 @@ a:hover {
 span.avoidwrap {
     display: inline-block;
 }
+b {
+    font-weight: bold;
+}
 
 
 /* Typed.js */
