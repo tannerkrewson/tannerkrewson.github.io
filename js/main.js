@@ -85,24 +85,6 @@ function popupEmail() {
 	});
 }
 
-function popup2018() {
-	swal({
-		title: 'Advertise your company here!',
-		html: 'I\'m looking for a company to advertise in this box. ' +
-			'Your company\'s logo will be at the top of this website, which gets <b>tens</b> of views a month!<br><br>' +
-			'And if you act now, I will <i>personally </i> fly out to your company for 10 to 12 weeks this summer ' +
-			'and write software as an intern. <b>What a steal!</b><br><br>' +
-			'Contact me now to take advantage of this once-in-a-lifetime oppurtunity. Time is running out!',
-		type: 'warning',
-		confirmButtonText: 'Email me!',
-		showCancelButton: true
-	}).then((result) => {
-	  if (result.value) {
-	    popupEmail();
-	  }
-	});
-}
-
 function popupESPN() {
 	swal({
 		html: 'ESPN was a great first internship! Here\'s what I put on my resume about it:<br><br>' +
