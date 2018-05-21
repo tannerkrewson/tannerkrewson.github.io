@@ -8,7 +8,7 @@ body {
 }
 .gradient-background {
   background:
-    linear-gradient(145deg,#5bf1d0,#509bf5);
+    linear-gradient(145deg,#FF9478,#FFDD83);
   background-repeat: no-repeat;
   width: 100%;
   top: -80px;
