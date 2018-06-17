@@ -42,14 +42,18 @@ function showPage() {
 }
 
 function getCurrentSong() {
-	httpGetAsync('http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=TankTan38&api_key=c68ea49b4e861204b0e6b6607a77c542&format=json&limit=1', function( data ) {
+	var url = 'https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=TankTan38&api_key=c68ea49b4e861204b0e6b6607a77c542&format=json&limit=1';
+	httpGetAsync(url, function( data ) {
 		var currentSong = JSON.parse(data);
 		var theTrack = currentSong.recenttracks.track[0];
 		var theArtist = theTrack.artist['#text'];
 		var theTitle = theTrack.name;
+		var nowPlaying = theTrack["@attr"] && theTrack["@attr"].nowplaying;
+		
+		var listenText = nowPlaying ? "Now Listening to" : "Last Song I Listened To:";
 
-		/* take the part in front of any hyphen or parenthese
-		 * to turn a song title like this:
+		/* split at the part in front of any hyphen or parenthese
+		 * to take a song title like this:
 		 *     (I Can't Get No) Satisfaction - Mono Version / Remastered 2002
 		 * and turn it into:
 		 *     (I Can't Get No) Satisfaction
@@ -58,11 +62,11 @@ function getCurrentSong() {
 		*/
 		theTitle = theTitle.split(' - ')[0].split(' (')[0].trim().substring(0, 32);
 
-		var finalHTML = '<span class="avoidwrap">Last Song I Listened To:</span> '
-		finalHTML += '<span class="avoidwrap"><i>';
+		var finalHTML = '<span class="avoidwrap">' + listenText + '</span> ';
+		finalHTML += '<span class="avoidwrap">';
 		finalHTML += '<a class="title-link" target="_blank" ';
 		finalHTML += 'href="//www.youtube.com/results?search_query=' + theTitle + '+' + theArtist + '">';
-		finalHTML += theTitle + '</a> </i>by<i> ' + theArtist + '</i>'
+		finalHTML += theTitle + '</a> by<i> ' + theArtist + '</i>'
 		finalHTML += '</span>';
 		$('#current-song').html(finalHTML);
 	});
