@@ -62,7 +62,7 @@ body {
   opacity: 0;
 }
 .non-existant {
-    display: none;
+  display: none;
 }
 .card {
   background-color: transparent;
@@ -76,63 +76,61 @@ body {
   justify-content: center;
   padding: 1.25rem;
 }
-.card-buttons {
-  justify-content: flex-start;
+.card-block a:hover {
+  color: transparent;
 }
 .card-title {
-    font-family: 'Lato', sans-serif;
-}
-.btn {
-    border: 2px solid white;
-    background-color: transparent;
-    color: white;
-}
-a, a:active, a:visited {
-    color: white;
-}
-a:hover {
-    color: grey;
+  font-family: 'Lato', sans-serif;
 }
 .title-link {
-    text-decoration: underline;
+  text-decoration: underline;
+}
+.fulltitle a, a:active, a:visited {
+  color: white;
+}
+.fulltitle a:hover {
+  color: grey;
 }
 .company-logo {
-    max-width: 75%;
+  max-width: 75%;
 }
 .display-4 {
-    font-family: 'Lato', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 span.avoidwrap {
-    display: inline-block;
+  display: inline-block;
 }
 b {
-    font-weight: bold;
+  font-weight: bold;
 }
 li {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
+}
+.btn {
+  margin-bottom: .3em;
 }
 
 
 /* Typed.js */
 
 .typed-cursor{
-    opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
 }
 @keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
 }
 @-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
 }
 @-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
 }
