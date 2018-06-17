@@ -37,7 +37,7 @@ function showPage() {
 	setTimeout(function () {
 		var elemsToFade = $(".to-fade");
 		elemsToFade.removeClass("to-fade");
-		elemsToFade.addClass("fade");
+		elemsToFade.addClass("fade-in");
 	}, 30);
 }
 
