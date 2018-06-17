@@ -90,14 +90,18 @@ function popupEmail() {
 }
 
 function popupESPN() {
+	var innerHTML = 'ESPN was a great first internship! Here\'s what I put on my resume about it:<br><br>' +
+	'<ul style="text-align: left;"><li>Designed​ ​and​ ​implemented​ ​live​ ​updating​ ​for​ ​news​ ​feeds​ ​on​ ​ESPN.com</li>' +
+	'<li>Spent​ ​6​ ​weeks​ ​with​ ​the​ ​Consumer​ ​Tech​ ​Ops​ ​team,​ ​diagnosing​ ​and​ ​fixing​ ​various​ ​bugs across​ ​ESPN.com​ ​and​ ​using​ ​the​ ​kanban​ ​methodology</li>' +
+	'<li>Spent​ ​another​ ​4​ ​weeks​ ​on​ ​the​ ​feature​ ​development​ ​team,​ ​adopting​ ​the​ ​agile​ ​/​ ​scrum methodology,​ ​and​ ​crafting​ ​features​ ​used​ ​by​ ​millions​ ​of​ ​sports​ ​fans​ ​worldwide</li>' +
+	'<li>Assisted​ ​in​ ​the​ ​creation​ ​of​ ​a​ ​redesign​ ​of​ ​ESPN.com’s​ ​MLB​ ​live​ ​gamecast​ ​feature</li>' +
+	'<li>Became​ ​versed​ ​in​ ​an​ ​obscure​ ​templating​ ​back-end​ ​language​ ​called​ ​Tea</li>' +
+	'<li>Resolved​ ​long-standing​ ​major​ ​UI​ ​issues​ ​with​ ​an​ ​internal​ ​translations​ ​tool</li></ul>';
 	swal({
-		html: 'ESPN was a great first internship! Here\'s what I put on my resume about it:<br><br>' +
-			'<ul style="text-align: left;"><li>Designed​ ​and​ ​implemented​ ​live​ ​updating​ ​for​ ​news​ ​feeds​ ​on​ ​ESPN.com</li>' +
-			'<li>Spent​ ​6​ ​weeks​ ​with​ ​the​ ​Consumer​ ​Tech​ ​Ops​ ​team,​ ​diagnosing​ ​and​ ​fixing​ ​various​ ​bugs across​ ​ESPN.com​ ​and​ ​using​ ​the​ ​kanban​ ​methodology</li>' +
-			'<li>Spent​ ​another​ ​4​ ​weeks​ ​on​ ​the​ ​feature​ ​development​ ​team,​ ​adopting​ ​the​ ​agile​ ​/​ ​scrum methodology,​ ​and​ ​crafting​ ​features​ ​used​ ​by​ ​millions​ ​of​ ​sports​ ​fans​ ​worldwide</li>' +
-			'<li>Assisted​ ​in​ ​the​ ​creation​ ​of​ ​a​ ​redesign​ ​of​ ​ESPN.com’s​ ​MLB​ ​live​ ​gamecast​ ​feature</li>' +
-			'<li>Became​ ​versed​ ​in​ ​an​ ​obscure​ ​templating​ ​back-end​ ​language​ ​called​ ​Tea</li>' +
-			'<li>Resolved​ ​long-standing​ ​major​ ​UI​ ​issues​ ​with​ ​an​ ​internal​ ​translations​ ​tool</li></ul>',
-		imageUrl: 'https://i.imgur.com/aYKfZ62.jpg'
+		content: {
+			element: 'p',
+			attributes: { innerHTML }
+		},
+		icon: 'https://i.imgur.com/aYKfZ62.jpg'
 	});
 }
