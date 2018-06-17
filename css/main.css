@@ -116,9 +116,12 @@ li {
 .swal-icon:first-child {
   margin-top: 0px;
 }
-
 .swal-icon img {
   border-radius: 5px 5px 0px 0px;
+}
+.btn-outline-light {
+  color: white;
+  border-color: white;
 }
 
 
