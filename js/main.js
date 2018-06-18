@@ -85,7 +85,13 @@ function getCurrentSong() {
 function popupEmail() {
 	swal({
 		title: 'Email me!',
-		html: '<a href="mailto:tannerkrewson@gmail.com" style="color: blue;">tannerkrewson@gmail.com</a>'
+		content: {
+			element: 'div',
+			attributes: {
+				style: 'text-align: center;',
+				innerHTML: '<a href="mailto:tannerkrewson@gmail.com" style="color: light-blue;">tannerkrewson@gmail.com</a>'
+			}
+		}
 	});
 }
 
