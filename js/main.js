@@ -28,7 +28,7 @@ Cookies.set('typed', 'true', { expires: sixteenHours });
 function showPage() {
 	// make the elements take up space by removing
 	// display: none, without removing opacity 0
-	$(".non-existant").removeClass("non-existant");
+	$(".nonexistent").removeClass("nonexistent");
 
 	// if it has less than an 11ms delay, the fade
 	// animation won't play
@@ -64,7 +64,7 @@ function getCurrentSong() {
 
 		var finalHTML = '<span class="avoidwrap">' + listenText + '</span> ';
 		finalHTML += '<span class="avoidwrap">';
-		finalHTML += '<a class="title-link" target="_blank" ';
+		finalHTML += '<a target="_blank" ';
 		finalHTML += 'href="//www.youtube.com/results?search_query=' + theTitle + '+' + theArtist + '">';
 		finalHTML += theTitle + '</a> by<i> ' + theArtist + '</i>'
 		finalHTML += '</span>';

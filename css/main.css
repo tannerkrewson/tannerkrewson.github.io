@@ -1,150 +1,149 @@
-
-/* Main */
-
+/*
+ *	Main
+ */
 body {
-  padding-bottom: 2rem;
-  color: white;
-  text-align: center;
+	padding-bottom: 2rem;
+	color: white;
+	text-align: center;
 }
+
 .gradient-background {
-  background:
-    linear-gradient(145deg,#FF9478,#FFDD83);
-  background-repeat: no-repeat;
-  width: 100%;
-  top: -80px;
-  bottom: -80px;
-  position: fixed;
-  z-index: -1;
+	background: linear-gradient(145deg, #FF9478, #FFDD83);
+	background-repeat: no-repeat;
+	width: 100%;
+	top: -80px;
+	bottom: -80px;
+	position: fixed;
+	z-index: -1;
 }
-.fulltitle {
-  padding: 1rem 1.5rem;
-  font-size: 1.25rem;
-}
-.content {
-  padding-left: 8px;
-  padding-right: 8px;
-}
+
 .fade-in {
-  opacity: 1;
-  -webkit-transition: all 0.7s ease-in-out;
-  -moz-transition: all 0.7s ease-in-out;
-  -o-transition: all 0.7s ease-in-out;
-  -ms-transition: all 0.7s ease-in-out;
-  transition: all 0.7s ease-in-out;
+	opacity: 1;
+	transition: all 0.7s ease-in-out;
 }
-.card-title {
-  font-size: 2rem;
-  font-weight: 300;
-}
-.card-subtitle {
-  font-family: 'Lato', sans-serif;
-}
-.card-col {
-  padding-bottom: 16px;
-  padding-left: 8px;
-  padding-right: 8px;
-  display: flex;
-}
-.btn-secondary {
-  margin-bottom: 5px;
-}
-.profile {
-  height: 160px;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  border-radius: 50%;
-}
-.subheading {
-  font-size: 2rem;
-  font-weight: 350;
-}
+
 .to-fade {
-  opacity: 0;
+	opacity: 0;
 }
-.non-existant {
-  display: none;
+
+.nonexistent {
+	display: none;
 }
-.card {
-  background-color: transparent;
-  border: 3px solid white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
+
+
+/*
+ *	Header
+ */
+.full-title {
+	padding: 1rem 1.5rem;
+	font-size: 1.25rem;
 }
-.card-block {
-  justify-content: center;
-  padding: 1.25rem;
+
+.profile {
+	height: 160px;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	border-radius: 50%;
 }
-.card-block a:hover {
-  color: transparent;
+
+.full-title a,
+a:active,
+a:visited {
+	color: white;
+	text-decoration: underline;
 }
-.card-title {
-  font-family: 'Lato', sans-serif;
+
+.full-title a:hover {
+	color: grey;
 }
-.title-link {
-  text-decoration: underline;
+
+.full-title .display-4 {
+	font-family: 'Lato', sans-serif;
 }
-.fulltitle a, a:active, a:visited {
-  color: white;
-}
-.fulltitle a:hover {
-  color: grey;
-}
-.company-logo {
-  max-width: 75%;
-}
-.display-4 {
-  font-family: 'Lato', sans-serif;
-}
+
 span.avoidwrap {
-  display: inline-block;
+	display: inline-block;
 }
-b {
-  font-weight: bold;
+
+
+/*
+ *	Project Cards
+ */
+.card-col {
+	display: flex;
+	padding: .5em;
 }
-li {
-  margin-bottom: 8px;
+
+.card {
+	background-color: transparent;
+	border: 3px solid white;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding: 1.25rem;
 }
-.btn {
-  margin-bottom: .3em;
+
+.card-title {
+	font-family: 'Lato', sans-serif;
+	font-size: 2rem;
+	font-weight: 300;
 }
-.swal-content {
-  color: black;
-  text-align: left;
+
+.card-subtitle {
+	font-family: 'Lato', sans-serif;
 }
-.swal-icon:first-child {
-  margin-top: 0px;
+
+.company-logo {
+	max-width: 75%;
 }
-.swal-icon img {
-  border-radius: 5px 5px 0px 0px;
+
+/* fix line appearing between buttons */
+.card a:hover {
+	color: transparent;
 }
+
 .btn-outline-light {
-  color: white;
-  border-color: white;
+	color: white;
+	border-color: white;
+	margin-bottom: .3em;
 }
 
 
-/* Typed.js */
+/*
+ *	SweetAlert
+ */
+.swal-content {
+	color: black;
+	text-align: left;
+}
 
-.typed-cursor{
-  opacity: 1;
-  -webkit-animation: blink 0.7s infinite;
-  -moz-animation: blink 0.7s infinite;
-  animation: blink 0.7s infinite;
+.swal-icon:first-child {
+	margin-top: 0px;
 }
-@keyframes blink{
-  0% { opacity:1; }
-  50% { opacity:0; }
-  100% { opacity:1; }
+
+.swal-icon img {
+	border-radius: 5px 5px 0px 0px;
 }
-@-webkit-keyframes blink{
-  0% { opacity:1; }
-  50% { opacity:0; }
-  100% { opacity:1; }
+
+
+/*
+ *	Typed.js
+ */
+.typed-cursor {
+	opacity: 1;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
 }
-@-moz-keyframes blink{
-  0% { opacity:1; }
-  50% { opacity:0; }
-  100% { opacity:1; }
+
+@keyframes blink {
+	0% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
