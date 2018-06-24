@@ -4,18 +4,17 @@ $('#footer-year').text((new Date()).getFullYear());
 
 var shouldPlayAnimation = !Cookies.get('typed');
 if (shouldPlayAnimation) {
+	$('#typing-title').css('z-index', 100);
+	var waitAndDisplay = () => {
+		setTimeout(showPage, 500);
+	}
 	$(".title").typed({
 		strings: [TITLE_TEXT],
 		typeSpeed: 100,
-		callback: showPage
+		callback: waitAndDisplay
 	});
 } else {
-	var title = $(".title");
-
-	// we don't fade the title when doing the typed
-	// animation... but we're not doing it anymore,
-	// so let's fade it
-	title.addClass("to-fade");
+	var title = $("#typing-title .title");
 	title.text(TITLE_TEXT);
 	showPage();
 }
@@ -28,17 +27,13 @@ Cookies.set('typed', 'true', { expires: sixteenHours });
 function showPage() {
 	// make the elements take up space by removing
 	// display: none, without removing opacity 0
-	$(".nonexistent").removeClass("nonexistent");
+	$("#project-cards").removeClass("nonexistent");
 
-	// if it has less than an 11ms delay, the fade
-	// animation won't play
-	// 11ms would only work sometimes, so I made
-	// it wait longer
-	setTimeout(function () {
-		var elemsToFade = $(".to-fade");
-		elemsToFade.removeClass("to-fade");
-		elemsToFade.addClass("fade-in");
-	}, 30);
+	// get rid of the solid black
+	$("#dark-start").css('background-color', 'transparent');
+
+	// begin the transition
+	$("#dark-start").addClass("transition");
 }
 
 function getCurrentSong() {

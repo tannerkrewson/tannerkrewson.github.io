@@ -17,17 +17,48 @@ body {
 	z-index: -1;
 }
 
-.fade-in {
+#dark-start {
 	opacity: 1;
-	transition: all 0.7s ease-in-out;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+	z-index: 1;
 }
 
-.to-fade {
-	opacity: 0;
+#dark-start:before {
+    content: '';
+	position: fixed;
+    left: 50%;
+	top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+	animation-duration: 1s;
+	box-shadow: 0px 0px 0px 100vmax black;
+	width: 150vmax;
+	height: 150vmax;
+}
+
+.transition:before {
+	animation-name: spotlight;
 }
 
 .nonexistent {
 	display: none;
+}
+
+@keyframes spotlight {
+	from {
+		width: 0vmin;
+		height: 0vmin;
+	}
+  
+	to {
+		width: 150vmax;
+		height: 150vmax;
+	}
 }
 
 
@@ -46,9 +77,7 @@ body {
 	border-radius: 50%;
 }
 
-.full-title a,
-a:active,
-a:visited {
+.full-title a, a:active, a:visited {
 	color: white;
 	text-decoration: underline;
 }
@@ -63,6 +92,10 @@ a:visited {
 
 span.avoidwrap {
 	display: inline-block;
+}
+
+#typing-title {
+	position: relative;
 }
 
 
