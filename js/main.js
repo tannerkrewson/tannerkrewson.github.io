@@ -91,13 +91,17 @@ function popupEmail() {
 }
 
 function popupESPN() {
-	var innerHTML = 'ESPN was a great first internship! Here\'s what I put on my resume about it:<br><br>' +
+	var innerHTML = 'ESPN was a great first internship! I spent the first ​6​ ​weeks​ on ​the​ ​Consumer​ ​Tech​ ​Ops​ ​team,​ ​' +
+	'diagnosing​ ​and​ ​fixing​ ​bugs across​ ​ESPN.com​. I spent the ' +
+	'remaining ​4​ ​weeks​ ​on​ ​the​ ESPN.com ​feature​ ​development​ ​team,​ ​working on the homepage news feed, a redesign ' +
+	'for MLB Gamecast, and an internal tool called Feed Manager. Here\'s ' +
+	'what I put on my resume about it:<br><br>' +
 	'<ul style="text-align: left;"><li>Designed​ ​and​ ​implemented​ ​live​ ​updating​ ​for​ ​news​ ​feeds​ ​on​ ​ESPN.com</li>' +
-	'<li>Spent​ ​6​ ​weeks​ ​with​ ​the​ ​Consumer​ ​Tech​ ​Ops​ ​team,​ ​diagnosing​ ​and​ ​fixing​ ​various​ ​bugs across​ ​ESPN.com​ ​and​ ​using​ ​the​ ​kanban​ ​methodology</li>' +
-	'<li>Spent​ ​another​ ​4​ ​weeks​ ​on​ ​the​ ​feature​ ​development​ ​team,​ ​adopting​ ​the​ ​agile​ ​/​ ​scrum methodology,​ ​and​ ​crafting​ ​features​ ​used​ ​by​ ​millions​ ​of​ ​sports​ ​fans​ ​worldwide</li>' +
-	'<li>Assisted​ ​in​ ​the​ ​creation​ ​of​ ​a​ ​redesign​ ​of​ ​ESPN.com’s​ ​MLB​ ​live​ ​gamecast​ ​feature</li>' +
-	'<li>Became​ ​versed​ ​in​ ​an​ ​obscure​ ​templating​ ​back-end​ ​language​ ​called​ ​Tea</li>' +
-	'<li>Resolved​ ​long-standing​ ​major​ ​UI​ ​issues​ ​with​ ​an​ ​internal​ ​translations​ ​tool</li></ul>';
+	'<li>Recognized and corrected a deployment flaw that could have taken down the site</li>' +
+	'<li>Resolved​ ​long-standing​ ​major​ ​UI​ ​issues​ ​with​ ​an​ ​internal​ ​translations​ ​tool</li>' +
+	'<li>Wrote new features in React for a tool used by editors to write and publish articles</li>' +
+	'<li>Navigated a monolithic legacy code base with a proprietary PHP-like back-end language</li>' +
+	'</ul>';
 	swal({
 		content: {
 			element: 'p',
