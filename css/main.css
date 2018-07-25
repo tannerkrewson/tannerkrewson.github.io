@@ -109,8 +109,8 @@ span.avoidwrap {
 }
 
 .card {
-	background-color: transparent;
-	border: 3px solid white;
+	background-color: rgba(0, 0, 0, 0.15);
+	border: none;
 	display: flex;
 	justify-content: center;
 	width: 100%;
