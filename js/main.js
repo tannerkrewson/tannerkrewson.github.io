@@ -2,6 +2,10 @@ var TITLE_TEXT = "Hi, I'm Tanner.";
 
 $('#footer-year').text((new Date()).getFullYear());
 
+$('.profile-pic').click(function () {
+	swal('If you\'re feeling stressed, breathe in as the circle expands, and breathe out as it shrinks. 😊');
+});
+
 var shouldPlayAnimation = !Cookies.get('typed');
 if (shouldPlayAnimation) {
 	$('#typing-title').css('z-index', 100);
@@ -34,6 +38,8 @@ function showPage() {
 
 	// begin the transition
 	$("#dark-start").addClass("transition");
+
+	$(".profile").addClass("breathe");
 }
 
 function getCurrentSong() {
@@ -44,7 +50,7 @@ function getCurrentSong() {
 		var theArtist = theTrack.artist['#text'];
 		var theTitle = theTrack.name;
 		var nowPlaying = theTrack["@attr"] && theTrack["@attr"].nowplaying;
-		
+
 		var listenText = nowPlaying ? "Now Listening to" : "Last Song I Listened To:";
 
 		/* split at the part in front of any hyphen or parenthese

@@ -55,7 +55,7 @@ body {
 		width: 0vmin;
 		height: 0vmin;
 	}
-  
+
 	to {
 		width: 150vmax;
 		height: 150vmax;
@@ -67,15 +67,39 @@ body {
  *	Header
  */
 .full-title {
-	padding: 1rem 1.5rem;
+	padding: 1rem 0;
 	font-size: 1.25rem;
 }
 
 .profile {
-	height: 160px;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
+	display: inline-block;
+	margin: 1rem 0;
+}
+
+.profile-pic {
+	height: 130px;
 	border-radius: 50%;
+}
+
+.breathe::before {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	height: 130px;
+	width: 130px;
+	border-radius: 50%;
+	box-shadow: inset 0 0 0 16px rgba(0,0,0,0.3);
+	animation: breathe 6s infinite;
+}
+
+@keyframes breathe {
+	from, to {
+		transform: scale(1, 1);
+	}
+
+	50% {
+		transform: scale(1.25, 1.25);
+	}
 }
 
 .full-title a, a:active, a:visited {
