@@ -106,7 +106,7 @@ function popupESPN() {
 	'<li>Recognized and corrected a deployment flaw that could have taken down the site</li>' +
 	'<li>Resolved​ ​long-standing​ ​major​ ​UI​ ​issues​ ​with​ ​an​ ​internal​ ​translations​ ​tool</li>' +
 	'<li>Wrote new features in React for a tool used by editors to write and publish articles</li>' +
-	'<li>Navigated a monolithic legacy code base with a proprietary PHP-like back-end language</li>' +
+	'<li>Navigated a legacy code base written with a proprietary back-end language called Tea</li>' +
 	'</ul>';
 	swal({
 		content: {
@@ -114,5 +114,25 @@ function popupESPN() {
 			attributes: { innerHTML }
 		},
 		icon: 'https://i.imgur.com/aYKfZ62.jpg'
+	});
+}
+
+function popupDisney() {
+	var innerHTML = 'I had so much fun at Disney in Seattle! I worked on Studio Northstar, a team that develops ​' +
+	'the attraction and show pages for the Disney parks. Our main task for the summer was a redesign of the ' +
+	'attractions pages from PHP to Angular 5. Here\'s what I put on my resume about it:<br><br>' +
+	'<ul style="text-align: left;"><li>Worked on a full stack redesign of the Disney attractions pages in Angular 5 and Node</li>' +
+	'<li>Created four major UI components in Angular 5 and ensured 100% unit test coverage</li>' +
+	'<li>Wrote a feature that themes the UI by extracting colors from an attraction\'s image</li>' +
+	'<li>Took the initiative to refactor and document the Angular 5 project as it grew</li>' +
+	'<li>Designed an easter egg that reveals the developers\' names when activated</li>' +
+	'<li>Made many bug fixes and minor features across legacy PHP and Angular 1 codebases</li>' +
+	'</ul>';
+	swal({
+		content: {
+			element: 'p',
+			attributes: { innerHTML }
+		},
+		icon: 'https://i.imgur.com/Rzpnv4A.jpg'
 	});
 }

@@ -67,7 +67,8 @@ body {
  *	Header
  */
 .full-title {
-	padding: 1rem 0;
+	padding-top: .5rem;
+	padding-bottom: 1rem;
 	font-size: 1.1rem;
 }
 
@@ -165,6 +166,7 @@ span.avoidwrap {
 
 .company-logo {
 	max-width: 75%;
+	max-height: 128px;
 }
 
 /* fix line appearing between buttons */
