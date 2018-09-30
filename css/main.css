@@ -68,7 +68,7 @@ body {
  */
 .full-title {
 	padding: 1rem 0;
-	font-size: 1.25rem;
+	font-size: 1.1rem;
 }
 
 .profile {
@@ -104,7 +104,6 @@ body {
 
 .full-title a, a:active, a:visited {
 	color: white;
-	text-decoration: underline;
 }
 
 .full-title a:hover {
@@ -115,12 +114,25 @@ body {
 	font-family: 'Lato', sans-serif;
 }
 
+#current-song {
+	margin-top: 22px;
+}
+
+#current-song a {
+	text-decoration: underline;
+}
+
 span.avoidwrap {
 	display: inline-block;
 }
 
 #typing-title {
 	position: relative;
+	margin-bottom: 12px;
+}
+
+.full-name {
+	font-size: 1.2rem;
 }
 
 
