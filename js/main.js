@@ -118,7 +118,7 @@ function popupESPN() {
 }
 
 function popupDisney() {
-	var innerHTML = 'I had so much fun at Disney in Seattle! I worked on Studio Northstar, a team that develops ​' +
+	var innerHTML = 'My second internship was at Disney\'s Seattle office. I worked on Studio Northstar, a team that develops ​' +
 	'the attraction and show pages for the Disney parks. Our main task for the summer was a redesign of the ' +
 	'attractions pages from PHP to Angular 5. Here\'s what I put on my resume about it:<br><br>' +
 	'<ul style="text-align: left;"><li>Worked on a full stack redesign of the Disney attractions pages in Angular 5 and Node</li>' +
