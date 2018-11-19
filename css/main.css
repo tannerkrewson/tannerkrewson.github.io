@@ -3,12 +3,12 @@
  */
 body {
 	padding-bottom: 2rem;
-	color: white;
+	color: #212529;
 	text-align: center;
 }
 
 .gradient-background {
-	background-image: linear-gradient(135deg, #80d0c7, #13547a);
+	background-image: linear-gradient(135deg, #F05F57, #7C5685);
 	background-repeat: no-repeat;
 	width: 100%;
 	top: -80px;
@@ -19,7 +19,7 @@ body {
 
 #dark-start {
 	opacity: 1;
-    background-color: black;
+    background-color: #212529;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -37,7 +37,7 @@ body {
     transform: translate(-50%, -50%);
     border-radius: 100%;
 	animation-duration: 1s;
-	box-shadow: 0px 0px 0px 100vmax black;
+	box-shadow: 0px 0px 0px 100vmax #212529;
 	width: 150vmax;
 	height: 150vmax;
 }
@@ -104,7 +104,7 @@ body {
 }
 
 .full-title a, a:active, a:visited {
-	color: white;
+	color: #212529;
 }
 
 .full-title a:hover {
@@ -130,6 +130,7 @@ span.avoidwrap {
 #typing-title {
 	position: relative;
 	margin-bottom: 12px;
+	transition: all .2s ease-in;
 }
 
 .full-name {
@@ -174,9 +175,9 @@ span.avoidwrap {
 	color: transparent;
 }
 
-.btn-outline-light {
-	color: white;
-	border-color: white;
+.btn-outline-dark {
+	color: #212529;
+	border-color: #212529;
 	margin-bottom: .3em;
 }
 

@@ -9,6 +9,7 @@ $('.profile-pic').click(function () {
 var shouldPlayAnimation = !Cookies.get('typed');
 if (shouldPlayAnimation) {
 	$('#typing-title').css('z-index', 100);
+	$('#typing-title').css('color', 'white');
 	var waitAndDisplay = () => {
 		setTimeout(showPage, 500);
 	}
@@ -35,6 +36,9 @@ function showPage() {
 
 	// get rid of the solid black
 	$("#dark-start").css('background-color', 'transparent');
+
+	// change title text color
+	$('#typing-title').css('color', '#212529');
 
 	// begin the transition
 	$("#dark-start").addClass("transition");
