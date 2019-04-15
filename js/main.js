@@ -61,7 +61,22 @@ function getCurrentSong() {
 		var theTitle = theTrack.name;
 		var nowPlaying = theTrack["@attr"] && theTrack["@attr"].nowplaying;
 
-		var listenText = nowPlaying ? "Right now, I'm listening to " : "The last song I listened to was ";
+		var listenText = "";
+
+		if (nowPlaying) {
+			listenText = "Right now, I'm listening to "
+		} else {
+				
+			// converts 9712739817 ms to "4 minute" ago
+			var timeSinceText = timeSince(theTrack.date.uts);
+
+			// if it's not 1, make it plural
+			if (!timeSinceText.startsWith('1 ')) {
+				timeSinceText += 's';
+			}
+
+			listenText = timeSinceText + " ago, I listened to "
+		}
 
 		/* split at the part in front of any hyphen or parenthese
 		 * to take a song title like this:
@@ -77,7 +92,7 @@ function getCurrentSong() {
 		finalHTML += '<span class="avoidwrap">';
 		finalHTML += '<a target="_blank" ';
 		finalHTML += 'href="//www.youtube.com/results?search_query=' + theTitle + '+' + theArtist + '">';
-		finalHTML += theTitle + '</a> by<i> ' + theArtist + '</i>.'
+		finalHTML += theTitle + '</a> by<i> ' + theArtist + '</i>';
 		finalHTML += '</span>';
 		$('#current-song').html(finalHTML);
 	});
@@ -91,6 +106,29 @@ function getCurrentSong() {
 	    xmlHttp.open("GET", theUrl, true); // true for asynchronous
 	    xmlHttp.send(null);
 	}
+}
+
+// https://stackoverflow.com/a/8247097
+function timeSince(date) {
+
+    var seconds = Math.floor(((new Date().getTime()/1000) - date)),
+    interval = Math.floor(seconds / 31536000);
+
+    if (interval > 1) return interval + " year";
+
+    interval = Math.floor(seconds / 2592000);
+    if (interval > 1) return interval + " minute";
+
+    interval = Math.floor(seconds / 86400);
+    if (interval >= 1) return interval + " day";
+
+    interval = Math.floor(seconds / 3600);
+    if (interval >= 1) return interval + " hour";
+
+    interval = Math.floor(seconds / 60);
+    if (interval > 1) return interval + " minute";
+
+    return Math.floor(seconds) + " second";
 }
 
 function popupEmail() {
