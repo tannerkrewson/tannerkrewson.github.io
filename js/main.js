@@ -1,4 +1,4 @@
-var TITLE_TEXT = "Hi, I'm Tanner.";
+const TITLE_TEXT = "Hi, I'm Tanner.";
 
 $('#footer-year').text((new Date()).getFullYear());
 
@@ -8,17 +8,23 @@ $('.profile-pic').click(function () {
 
 var shouldPlayAnimation = !Cookies.get('typed');
 if (shouldPlayAnimation) {
+
+	// start the title above the shadow, and as white text
 	$('#typing-title').css('z-index', 100);
 	$('#typing-title').css('color', 'white');
-	var waitAndDisplay = () => {
-		setTimeout(showPage, 500);
-	}
-	$(".title").typed({
+
+	// execute the animation
+	new Typed(".title", {
 		strings: [TITLE_TEXT],
 		typeSpeed: 100,
-		callback: waitAndDisplay
+		onComplete: () => {
+			// wait a bit, then show the page
+			setTimeout(showPage, 300);
+		}
 	});
+
 } else {
+	// forgo the animation, and just show the page
 	var title = $("#typing-title .title");
 	title.text(TITLE_TEXT);
 	showPage();
@@ -26,7 +32,7 @@ if (shouldPlayAnimation) {
 
 getCurrentSong();
 
-var sixteenHours = 16/24;
+const sixteenHours = 16/24;
 Cookies.set('typed', 'true', { expires: sixteenHours });
 
 function showPage() {
