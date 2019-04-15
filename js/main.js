@@ -61,7 +61,7 @@ function getCurrentSong() {
 		var theTitle = theTrack.name;
 		var nowPlaying = theTrack["@attr"] && theTrack["@attr"].nowplaying;
 
-		var listenText = nowPlaying ? "Now Listening to" : "Last Song I Listened To:";
+		var listenText = nowPlaying ? "Right now, I'm listening to " : "The last song I listened to was ";
 
 		/* split at the part in front of any hyphen or parenthese
 		 * to take a song title like this:
@@ -77,7 +77,7 @@ function getCurrentSong() {
 		finalHTML += '<span class="avoidwrap">';
 		finalHTML += '<a target="_blank" ';
 		finalHTML += 'href="//www.youtube.com/results?search_query=' + theTitle + '+' + theArtist + '">';
-		finalHTML += theTitle + '</a> by<i> ' + theArtist + '</i>'
+		finalHTML += theTitle + '</a> by<i> ' + theArtist + '</i>.'
 		finalHTML += '</span>';
 		$('#current-song').html(finalHTML);
 	});
