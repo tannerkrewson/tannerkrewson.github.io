@@ -8,7 +8,12 @@ const Popup = Swal.mixin({
 });
 
 $('.profile-pic').click(function () {
-	Popup.fire('', 'If you\'re feeling stressed, breathe in as the circle expands, and breathe out as it shrinks. 😊');
+	Popup.fire(
+		'', 
+		'If you\'re feeling stressed, breathe in as the circle expands, ' + 
+		'and breathe out as it shrinks. 😊<br><br>Inspired by the ' + 
+		'<a target="_blank" href="https://quietkit.com/box-breathing/">Navy SEAL breathing technique</a>.'
+	);
 });
 
 var shouldPlayAnimation = !Cookies.get('typed');

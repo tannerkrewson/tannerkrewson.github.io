@@ -90,15 +90,15 @@ body {
 	width: 130px;
 	border-radius: 50%;
 	box-shadow: inset 0 0 0 16px rgba(0,0,0,0.3);
-	animation: breathe 6s infinite;
+	animation: breathe 16s infinite;
 }
 
 @keyframes breathe {
-	from, to {
+	from, 75%, to {
 		transform: scale(1, 1);
 	}
 
-	50% {
+	25%, 50% {
 		transform: scale(1.25, 1.25);
 	}
 }
@@ -188,6 +188,14 @@ span.avoidwrap {
 #swal2-content {
 	text-align: left;
 	font-weight: normal;
+}
+
+#swal2-content a {
+	color: #45c299;
+}
+
+#swal2-content a:hover {
+	text-decoration: underline;
 }
 
 .swal2-image {
