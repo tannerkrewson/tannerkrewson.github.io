@@ -16,9 +16,9 @@ $('.profile-pic').click(function () {
 	);
 });
 
-var shouldPlayAnimation = !Cookies.get('typed');
-if (shouldPlayAnimation) {
+var shouldPlayAnimation = !(Cookies.get('typed') === 'true');
 
+if (shouldPlayAnimation) {
 	// start the title above the shadow, and as white text
 	$('#typing-title').css('z-index', 100);
 	$('#typing-title').css('color', 'white');
@@ -34,6 +34,7 @@ if (shouldPlayAnimation) {
 	});
 
 } else {
+	
 	// forgo the animation, and just show the page
 	var title = $("#typing-title .title");
 	title.text(TITLE_TEXT);
@@ -60,6 +61,21 @@ function showPage() {
 	$("#dark-start").addClass("transition");
 
 	$(".profile").addClass("breathe");
+
+	$("#typing-title").on('click', function () {
+		Popup.fire({
+			title: 'Want to see the cool typing intro animation again?',
+			type: 'question',
+			showCancelButton: true,
+			confirmButtonText: 'Yes',
+			cancelButtonText: 'No'
+		}).then((result) => {
+			if (result.value) {
+				Cookies.set('typed', 'false');
+				location.reload();
+			}
+		});
+	});
 }
 
 function getCurrentSong() {
