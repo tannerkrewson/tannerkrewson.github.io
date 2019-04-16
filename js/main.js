@@ -62,7 +62,7 @@ function showPage() {
 
 	$(".profile").addClass("breathe");
 
-	$("#typing-title").on('click', function () {
+	$("#typing-title .title").on('click', function () {
 		Popup.fire({
 			title: 'Want to see the cool typing intro animation again?',
 			type: 'question',
