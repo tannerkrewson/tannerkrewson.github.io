@@ -2,8 +2,13 @@ const TITLE_TEXT = "Hi, I'm Tanner.";
 
 $('#footer-year').text((new Date()).getFullYear());
 
+// swal defaults
+const Popup = Swal.mixin({
+	confirmButtonColor: '#45c299'
+});
+
 $('.profile-pic').click(function () {
-	swal('If you\'re feeling stressed, breathe in as the circle expands, and breathe out as it shrinks. 😊');
+	Popup.fire('', 'If you\'re feeling stressed, breathe in as the circle expands, and breathe out as it shrinks. 😊');
 });
 
 var shouldPlayAnimation = !Cookies.get('typed');
@@ -132,7 +137,7 @@ function timeSince(date) {
 }
 
 function popupEmail() {
-	swal({
+	Popup.fire({
 		title: 'Email me!',
 		content: {
 			element: 'div',
@@ -156,17 +161,14 @@ function popupESPN() {
 	'<li>Wrote new features in React for a tool used by editors to write and publish articles</li>' +
 	'<li>Navigated a legacy code base written with a proprietary back-end language called Tea</li>' +
 	'</ul>';
-	swal({
-		content: {
-			element: 'p',
-			attributes: { innerHTML }
-		},
-		icon: 'https://i.imgur.com/aYKfZ62.jpg'
+	Popup.fire({
+		html: innerHTML,
+		imageUrl: 'https://i.imgur.com/aYKfZ62.jpg'
 	});
 }
 
 function popupDisney() {
-	var innerHTML = 'My second internship was at Disney\'s Seattle office. I worked on Studio Northstar, a team that develops ​' +
+	var innerHTML = '<p>My second internship was at Disney\'s Seattle office. I worked on Studio Northstar, a team that develops ​' +
 	'the attraction and show pages for the Disney parks. Our main task for the summer was a redesign of the ' +
 	'attractions pages from PHP to Angular 5. Here\'s what I put on my resume about it:<br><br>' +
 	'<ul style="text-align: left;"><li>Worked on a full stack redesign of the Disney attractions pages in Angular 5 and Node</li>' +
@@ -175,12 +177,9 @@ function popupDisney() {
 	'<li>Took the initiative to refactor and document the Angular 5 project as it grew</li>' +
 	'<li>Designed an easter egg that reveals the developers\' names when activated</li>' +
 	'<li>Made many bug fixes and minor features across legacy PHP and Angular 1 codebases</li>' +
-	'</ul>';
-	swal({
-		content: {
-			element: 'p',
-			attributes: { innerHTML }
-		},
-		icon: 'https://i.imgur.com/Rzpnv4A.jpg'
+	'</ul></p>';
+	Popup.fire({
+		html: innerHTML,
+		imageUrl: 'https://i.imgur.com/Rzpnv4A.jpg'
 	});
 }

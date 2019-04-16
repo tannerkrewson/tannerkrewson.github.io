@@ -185,19 +185,17 @@ span.avoidwrap {
 /*
  *	SweetAlert
  */
-.swal-content {
-	color: black;
+#swal2-content {
 	text-align: left;
+	font-weight: normal;
 }
 
-.swal-icon:first-child {
-	margin-top: 0px;
-}
-
-.swal-icon img {
+.swal2-image {
+	margin-top: -1.25em;
+	margin-left: -1.25em;
+	max-width: calc(100% + 2.5em);
 	border-radius: 5px 5px 0px 0px;
 }
-
 
 /*
  *	Typed.js
