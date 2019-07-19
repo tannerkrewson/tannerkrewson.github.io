@@ -204,3 +204,29 @@ function popupDisney() {
 		imageUrl: 'https://i.imgur.com/Rzpnv4A.jpg'
 	});
 }
+
+function popupGS() {
+	var innerHTML = '<p>My third internship was at Goldman Sachs in NYC. It ' +
+	'was an awesome experience going from never having taken an econ class ' + 
+	'to working on Wall Street! I worked on the Goldman Sachs Asset ' +
+	'Management Compliance Automation team. My project was to redesign an ' + 
+	'existing dashboard for compliance officers to easily see what trades ' +
+	'they need to review. I did it with React, Redux, and a bit of Java.​'
+	'</p>';
+	Popup.fire({
+		html: innerHTML,
+		imageUrl: 'https://i.imgur.com/hYkR64w.jpg'
+	});
+}
+
+function popupDSS() {
+	var innerHTML = '<p>For my fourth and final internship, I will join the ' +
+	'team at Disney Streaming Services in NYC. They will be focused on the ' +
+	'upcoming launch of Disney+, which will happen at the end '+ 
+	'of my internship, on November 12. It should be a lot of fun!' +
+	'</p>';
+	Popup.fire({
+		html: innerHTML,
+		imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/3/3e/Disney%2B_logo.svg'
+	});
+}
