@@ -166,8 +166,8 @@ span.avoidwrap {
 }
 
 .company-logo {
-	max-width: 75%;
-	max-height: 128px;
+	max-width: 62.5%;
+	max-height: 105px;
 }
 
 /* fix line appearing between buttons */
