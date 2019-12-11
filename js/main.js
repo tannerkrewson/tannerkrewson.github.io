@@ -220,13 +220,12 @@ function popupGS() {
 }
 
 function popupDSS() {
-	var innerHTML = '<p>For my fourth and final internship, I will join the ' +
-	'team at Disney Streaming Services in NYC. They will be focused on the ' +
-	'upcoming launch of Disney+, which will happen at the end '+ 
-	'of my internship, on November 12. It should be a lot of fun!' +
+	var innerHTML = '<p>For my fourth and final internship, I joined the ' +
+	'team at Disney Streaming Services in NYC for the launch of Disney+. ' +
+	'What a cool experience!'
 	'</p>';
 	Popup.fire({
 		html: innerHTML,
-		imageUrl: 'https://upload.wikimedia.org/wikipedia/commons/3/3e/Disney%2B_logo.svg'
+		imageUrl: 'https://i.imgur.com/dmIzkPU.png'
 	});
 }
