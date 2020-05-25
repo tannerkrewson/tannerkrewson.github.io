@@ -1,6 +1,10 @@
-# tannerkrewson.github.io
+# www.tannerkrewson.com
 
-> My wonderful Nuxt.js project
+**Visit the site: www.tannerkrewson.com**
+
+This is the source code of my personal website.
+
+It was orignally built with [Jekyll](https://jekyllrb.com/), but has been ported to [Vue](https://vuejs.org/) & [Nuxt.js](https://nuxtjs.org/). It uses [Bootstrap 4](https://getbootstrap.com/), and [Typed.js](https://github.com/mattboldt/typed.js/) for the typing effect on the logo. It is hosted on [GitHub Pages](https://pages.github.com/).
 
 ## Build Setup
 
