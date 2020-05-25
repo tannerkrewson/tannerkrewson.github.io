@@ -171,16 +171,16 @@
             Grab four or more of your friends, and play Drawphone right in your
             phone's web browser.</project-card
           >
+
           <project-card
-            title="Mutual Music"
-            left-button-href="https://www.tannerkrewson.com/mutual-music/"
-            left-button-text="Try it Out"
-            right-button-href="https://github.com/tannerkrewson/mutual-music"
+            title="Spyfall"
+            left-button-href="https://spyfall.tannerkrewson.com/"
+            left-button-text="Play Spyfall"
+            right-button-href="https://github.com/tannerkrewson/spyfall"
             right-button-text="View on GitHub"
-            >Using your Spotify accounts, Mutual Music creates a playlist of
-            songs you and a friend both love. No more fighting over whose music
-            to play! It's like mutual friends on Facebook, but for your favorite
-            songs.</project-card
+            >The game that inspired Drawphone, spyfall.crabhat.com, was removed
+            from the Internet. So, I recovered the old code, rewrote most of it,
+            and added a few new features. Give it a shot!</project-card
           >
         </div>
 
@@ -209,20 +209,18 @@
             against the wicked-smart AI in single player.</project-card
           >
         </div>
-
         <div class="row">
           <project-card
-            title="Snakeout"
-            left-button-href="https://snakeout.tannerkrewson.com/"
-            left-button-text="Play Snakeout"
-            right-button-href="https://github.com/tannerkrewson/spyout"
+            title="Mutual Music"
+            left-button-href="https://www.tannerkrewson.com/mutual-music/"
+            left-button-text="Try it Out"
+            right-button-href="https://github.com/tannerkrewson/mutual-music"
             right-button-text="View on GitHub"
-            >(formerly Spyout) A recreation of the board game The Resistance,
-            made in the style of my previous game, Drawphone. Gather 5 to 10 of
-            your friends, and prepare yourself for major trust
-            issues.</project-card
+            >Using your Spotify accounts, Mutual Music creates a playlist of
+            songs you and a friend both love. No more fighting over whose music
+            to play! It's like mutual friends on Facebook, but for your favorite
+            songs.</project-card
           >
-
           <project-card
             title="Spotify-in-Common"
             left-button-href="https://www.tannerkrewson.com/sic/"
@@ -233,6 +231,31 @@
             Spotify playlists, and Spotify-in-Common will generate a new
             playlist containing the songs present in all of the selected
             playlists.</project-card
+          >
+        </div>
+
+        <div class="row">
+          <project-card
+            title="Snakeout"
+            left-button-href="https://snakeout.tannerkrewson.com/"
+            left-button-text="Play Snakeout"
+            right-button-href="https://github.com/tannerkrewson/snakeout"
+            right-button-text="View on GitHub"
+            >(formerly Spyout) A recreation of the board game The Resistance,
+            made in the style of my previous game, Drawphone. Gather 5 to 10 of
+            your friends, and prepare yourself for major trust
+            issues.</project-card
+          >
+
+          <project-card
+            title="COVID-19 Stimulus Check Calculator"
+            left-button-href="https://www.tannerkrewson.com/coronacalc"
+            left-button-text="Try it out"
+            right-button-href="https://github.com/tannerkrewson/coronacalc"
+            right-button-text="View on GitHub"
+            >A simple quiz to see the difference in the stimulus check amount
+            that one would receive under the final CARES act, versus the
+            Democrats' original, failed act.</project-card
           >
         </div>
 
@@ -497,6 +520,7 @@ body {
 }
 
 .stationary-background {
+  background: #4060c2;
   background-repeat: no-repeat;
   width: 100%;
   top: -80px;
