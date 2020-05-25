@@ -1,21 +1,3 @@
-const TITLE_TEXT = "Hi, I'm Tanner."
-
-$('#footer-year').text(new Date().getFullYear())
-
-// swal defaults
-const Popup = Swal.mixin({
-  confirmButtonColor: '#45c299'
-})
-
-$('.profile-pic').click(function() {
-  Popup.fire(
-    '',
-    "If you're feeling stressed, breathe in as the circle expands, " +
-      'and breathe out as it shrinks. 😊<br><br>Inspired by the ' +
-      '<a target="_blank" href="https://quietkit.com/box-breathing/">Navy SEAL breathing technique</a>.'
-  )
-})
-
 const shouldPlayAnimation = !(Cookies.get('typed') === 'true')
 
 getCurrentSong()
@@ -24,20 +6,7 @@ const sixteenHours = 16 / 24
 Cookies.set('typed', 'true', { expires: sixteenHours })
 
 function showPage() {
-  $('#typing-title .title').on('click', function() {
-    Popup.fire({
-      title: 'Want to see the cool typing intro animation again?',
-      type: 'question',
-      showCancelButton: true,
-      confirmButtonText: 'Yes',
-      cancelButtonText: 'No'
-    }).then((result) => {
-      if (result.value) {
-        Cookies.set('typed', 'false')
-        location.reload()
-      }
-    })
-  })
+  $('#typing-title .title').on('click')
 }
 
 function getCurrentSong() {
@@ -125,82 +94,4 @@ function timeSince(date) {
   if (interval > 1) return interval + ' minute'
 
   return Math.floor(seconds) + ' second'
-}
-
-function popupEmail() {
-  Popup.fire({
-    title: 'Email me!',
-    content: {
-      element: 'div',
-      attributes: {
-        style: 'text-align: center;',
-        innerHTML:
-          '<a href="mailto:tannerkrewson@gmail.com" style="color: light-blue;">tannerkrewson@gmail.com</a>'
-      }
-    }
-  })
-}
-
-function popupESPN() {
-  const innerHTML =
-    'ESPN was a great first internship! I spent the first ​6​ ​weeks​ on ​the​ ​Consumer​ ​Tech​ ​Ops​ ​team,​ ​' +
-    'diagnosing​ ​and​ ​fixing​ ​bugs across​ ​ESPN.com​. I spent the ' +
-    'remaining ​4​ ​weeks​ ​on​ ​the​ ESPN.com ​feature​ ​development​ ​team,​ ​working on the homepage news feed, a redesign ' +
-    "for MLB Gamecast, and an internal tool called Feed Manager. Here's " +
-    'what I put on my resume about it:<br><br>' +
-    '<ul style="text-align: left;"><li>Designed​ ​and​ ​implemented​ ​live​ ​updating​ ​for​ ​news​ ​feeds​ ​on​ ​ESPN.com</li>' +
-    '<li>Recognized and corrected a deployment flaw that could have taken down the site</li>' +
-    '<li>Resolved​ ​long-standing​ ​major​ ​UI​ ​issues​ ​with​ ​an​ ​internal​ ​translations​ ​tool</li>' +
-    '<li>Wrote new features in React for a tool used by editors to write and publish articles</li>' +
-    '<li>Navigated a legacy code base written with a proprietary back-end language called Tea</li>' +
-    '</ul>'
-  Popup.fire({
-    html: innerHTML,
-    imageUrl: 'https://i.imgur.com/aYKfZ62.jpg'
-  })
-}
-
-function popupDisney() {
-  const innerHTML =
-    "<p>My second internship was at Disney's Seattle office. I worked on Studio Northstar, a team that develops ​" +
-    'the attraction and show pages for the Disney parks. Our main task for the summer was a redesign of the ' +
-    "attractions pages from PHP to Angular 5. Here's what I put on my resume about it:<br><br>" +
-    '<ul style="text-align: left;"><li>Worked on a full stack redesign of the Disney attractions pages in Angular 5 and Node</li>' +
-    '<li>Created four major UI components in Angular 5 and ensured 100% unit test coverage</li>' +
-    "<li>Wrote a feature that themes the UI by extracting colors from an attraction's image</li>" +
-    '<li>Took the initiative to refactor and document the Angular 5 project as it grew</li>' +
-    "<li>Designed an easter egg that reveals the developers' names when activated</li>" +
-    '<li>Made many bug fixes and minor features across legacy PHP and Angular 1 codebases</li>' +
-    '</ul></p>'
-  Popup.fire({
-    html: innerHTML,
-    imageUrl: 'https://i.imgur.com/Rzpnv4A.jpg'
-  })
-}
-
-function popupGS() {
-  const innerHTML =
-    '<p>My third internship was at Goldman Sachs in NYC. It ' +
-    'was an awesome experience going from never having taken an econ class ' +
-    'to working on Wall Street! I worked on the Goldman Sachs Asset ' +
-    'Management Compliance Automation team. My project was to redesign an ' +
-    'existing dashboard for compliance officers to easily see what trades ' +
-    'they need to review. I did it with React, Redux, and a bit of Java.​'
-  ;('</p>')
-  Popup.fire({
-    html: innerHTML,
-    imageUrl: 'https://i.imgur.com/hYkR64w.jpg'
-  })
-}
-
-function popupDSS() {
-  const innerHTML =
-    '<p>For my fourth and final internship, I joined the ' +
-    'team at Disney Streaming Services in NYC for the launch of Disney+. ' +
-    'What a cool experience!'
-  ;('</p>')
-  Popup.fire({
-    html: innerHTML,
-    imageUrl: 'https://i.imgur.com/dmIzkPU.png'
-  })
 }
