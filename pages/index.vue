@@ -1,13 +1,21 @@
 <template>
   <div>
-    <div id="dark-start"></div>
+    <div
+      id="dark-start"
+      :style="{ backgroundColor: darkStartBackgroundColor }"
+      :class="{ transition: darkStartTransition }"
+    ></div>
     <div class="gradient-background"></div>
     <div class="container">
       <div class="full-title">
         <div class="profile">
           <img src="static/me.jpg" class="profile-pic" alt="Tanner Krewson" />
         </div>
-        <h1 id="typing-title" class="display-4">
+        <h1
+          id="typing-title"
+          class="display-4"
+          :style="{ zIndex: typingTitleZIndex, color: typingTitleColor }"
+        >
           <span class="title"></span>
         </h1>
         <div>
@@ -49,7 +57,7 @@
         </div>
       </div>
 
-      <div id="project-cards" class="nonexistent">
+      <div id="project-cards" :class="{ nonexistant: projectCardsNonexistant }">
         <div class="row">
           <div class="col-md-6 card-col">
             <div class="card">
@@ -513,7 +521,7 @@
         <br />
         <footer>
           tannerkrewson,
-          <span id="footer-year"></span>
+          <span id="footer-year">{{ year }}</span>
         </footer>
       </div>
     </div>
@@ -523,9 +531,56 @@
 
 <script>
 // import Logo from '~/components/Logo.vue'
+import Typed from 'typed.js'
 
 export default {
-  components: {}
+  data: () => ({
+    year: new Date().getFullYear(),
+    titleText: '',
+    typingTitleZIndex: () => 100,
+    typingTitleColor: () => 'white',
+    projectCardsNonexistant: true,
+    darkStartBackgroundColor: '#212529',
+    darkStartTransition: false
+  }),
+  mounted() {
+    const shouldPlayAnimation = true
+    if (shouldPlayAnimation) {
+      // start the title above the shadow, and as white text
+      this.typingTitleZIndex = 100
+      this.typingTitleColor = 'white'
+
+      // execute the animation
+      new Typed('.title', {
+        strings: ['Tanner Krewson'],
+        typeSpeed: 100,
+        onComplete: () => {
+          // wait a bit, then show the page
+          setTimeout(() => this.showPage(), 300)
+        }
+      })
+    } else {
+      // forgo the animation, and just show the page
+      this.titleText = 'Tanner Krewson'
+      this.showPage()
+    }
+  },
+  methods: {
+    showPage() {
+      // make the elements take up space by removing
+      // display: none, without removing opacity 0
+      this.projectCardsNonexistant = false
+
+      // get rid of the solid color covering the page
+      this.darkStartBackgroundColor = 'transparent'
+
+      // invert title text color
+      this.typingTitleColor = '#212529'
+
+      // begin the circle transition
+      this.darkStartTransition = true
+    }
+  }
 }
 </script>
 
@@ -551,7 +606,6 @@ body {
 
 #dark-start {
   opacity: 1;
-  background-color: #212529;
   position: fixed;
   width: 100%;
   height: 100%;

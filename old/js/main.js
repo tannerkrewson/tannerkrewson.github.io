@@ -18,48 +18,12 @@ $('.profile-pic').click(function() {
 
 const shouldPlayAnimation = !(Cookies.get('typed') === 'true')
 
-if (shouldPlayAnimation) {
-  // start the title above the shadow, and as white text
-  $('#typing-title').css('z-index', 100)
-  $('#typing-title').css('color', 'white')
-
-  // execute the animation
-  new Typed('.title', {
-    strings: [TITLE_TEXT],
-    typeSpeed: 100,
-    onComplete: () => {
-      // wait a bit, then show the page
-      setTimeout(showPage, 300)
-    }
-  })
-} else {
-  // forgo the animation, and just show the page
-  const title = $('#typing-title .title')
-  title.text(TITLE_TEXT)
-  showPage()
-}
-
 getCurrentSong()
 
 const sixteenHours = 16 / 24
 Cookies.set('typed', 'true', { expires: sixteenHours })
 
 function showPage() {
-  // make the elements take up space by removing
-  // display: none, without removing opacity 0
-  $('#project-cards').removeClass('nonexistent')
-
-  // get rid of the solid black
-  $('#dark-start').css('background-color', 'transparent')
-
-  // change title text color
-  $('#typing-title').css('color', '#212529')
-
-  // begin the transition
-  $('#dark-start').addClass('transition')
-
-  $('.profile').addClass('breathe')
-
   $('#typing-title .title').on('click', function() {
     Popup.fire({
       title: 'Want to see the cool typing intro animation again?',
