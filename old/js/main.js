@@ -1,9 +1,4 @@
-const shouldPlayAnimation = !(Cookies.get('typed') === 'true')
-
 getCurrentSong()
-
-const sixteenHours = 16 / 24
-Cookies.set('typed', 'true', { expires: sixteenHours })
 
 function showPage() {
   $('#typing-title .title').on('click')

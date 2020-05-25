@@ -17,7 +17,7 @@
           :style="{ zIndex: typingTitleZIndex, color: typingTitleColor }"
           @click="onTitleClick"
         >
-          <span class="title"></span>
+          <span class="title">{{ titleText }}</span>
         </h1>
         <div>
           <div class="full-name">Tanner Krewson</div>
@@ -530,6 +530,8 @@
 <script>
 // import Logo from '~/components/Logo.vue'
 import Typed from 'typed.js'
+import Cookies from 'js-cookie'
+
 import Swal from 'sweetalert2'
 const Popup = Swal.mixin({
   confirmButtonColor: '#45c299'
@@ -546,7 +548,11 @@ export default {
     darkStartTransition: false
   }),
   mounted() {
-    const shouldPlayAnimation = true
+    const shouldPlayAnimation = !(Cookies.get('typed') === 'true')
+
+    const sixteenHours = 16 / 24
+    Cookies.set('typed', 'true', { expires: sixteenHours })
+
     if (shouldPlayAnimation) {
       // start the title above the shadow, and as white text
       this.typingTitleZIndex = 100
@@ -673,7 +679,7 @@ export default {
         cancelButtonText: 'No'
       }).then((result) => {
         if (result.value) {
-          // Cookies.set('typed', 'false')
+          Cookies.set('typed', 'false')
           location.reload()
         }
       })
