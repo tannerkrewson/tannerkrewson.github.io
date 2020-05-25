@@ -54,7 +54,7 @@
               Last.fm
             </a>
           </span>
-          <div id="current-song"></div>
+          <listening />
         </div>
       </div>
 
@@ -528,16 +528,18 @@
 </template>
 
 <script>
-// import Logo from '~/components/Logo.vue'
-import Typed from 'typed.js'
 import Cookies from 'js-cookie'
-
+import Typed from 'typed.js'
 import Swal from 'sweetalert2'
+
+import Listening from '~/components/Listening.vue'
+
 const Popup = Swal.mixin({
   confirmButtonColor: '#45c299'
 })
 
 export default {
+  components: { Listening },
   data: () => ({
     year: new Date().getFullYear(),
     titleText: '',
@@ -807,14 +809,6 @@ a:visited {
 
 .full-title .display-4 {
   font-family: 'Lato', sans-serif;
-}
-
-#current-song {
-  margin-top: 22px;
-}
-
-#current-song a {
-  text-decoration: underline;
 }
 
 span.avoidwrap {

@@ -1,9 +1,5 @@
 getCurrentSong()
 
-function showPage() {
-  $('#typing-title .title').on('click')
-}
-
 function getCurrentSong() {
   const url =
     'https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=TankTan38&api_key=c68ea49b4e861204b0e6b6607a77c542&format=json&limit=1'
