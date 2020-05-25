@@ -9,7 +9,7 @@
     <div class="container">
       <div class="full-title">
         <div class="profile">
-          <img src="static/me.jpg" class="profile-pic" alt="Tanner Krewson" />
+          <img src="me.jpg" class="profile-pic" alt="Tanner Krewson" />
         </div>
         <h1
           id="typing-title"
@@ -50,21 +50,21 @@
           •
           <span>
             <a target="_blank" href="https://www.last.fm/user/TankTan38">
-              Last .fm
+              Last.fm
             </a>
           </span>
           <div id="current-song"></div>
         </div>
       </div>
 
-      <div id="project-cards" :class="{ nonexistant: projectCardsNonexistant }">
+      <div id="project-cards" :class="{ nonexistent: projectCardsNonexistent }">
         <div class="row">
           <div class="col-md-6 card-col">
             <div class="card">
               <div class="card-block">
                 <div class="card-title" style="margin-top: 8px;">
                   <a href="#" onclick="popupDSS();">
-                    <img class="company-logo" src="static/dss-dark.svg" />
+                    <img class="company-logo" src="dss-dark.svg" />
                   </a>
                 </div>
                 <br />
@@ -88,7 +88,7 @@
               <div class="card-block">
                 <div class="card-title" style="margin-top: 8px;">
                   <a href="#" onclick="popupGS();">
-                    <img class="company-logo" src="static/gs-dark.svg" />
+                    <img class="company-logo" src="gs-dark.svg" />
                   </a>
                 </div>
                 <br />
@@ -115,10 +115,7 @@
               <div class="card-block">
                 <div class="card-title" style="margin-top: 8px;">
                   <a href="#" onclick="popupDisney();">
-                    <img
-                      class="company-logo"
-                      src="static/disney-parks-dark.svg"
-                    />
+                    <img class="company-logo" src="disney-parks-dark.svg" />
                   </a>
                 </div>
                 <h5 class="card-subtitle">Software Engineer Intern</h5>
@@ -141,7 +138,7 @@
               <div class="card-block">
                 <div class="card-title" style="margin-top: 8px;">
                   <a href="#" onclick="popupESPN();">
-                    <img class="company-logo" src="static/espn-dark.svg" />
+                    <img class="company-logo" src="espn-dark.svg" />
                   </a>
                 </div>
                 <br />
@@ -539,7 +536,7 @@ export default {
     titleText: '',
     typingTitleZIndex: () => 100,
     typingTitleColor: () => 'white',
-    projectCardsNonexistant: true,
+    projectCardsNonexistent: true,
     darkStartBackgroundColor: '#212529',
     darkStartTransition: false
   }),
@@ -569,7 +566,7 @@ export default {
     showPage() {
       // make the elements take up space by removing
       // display: none, without removing opacity 0
-      this.projectCardsNonexistant = false
+      this.projectCardsNonexistent = false
 
       // get rid of the solid color covering the page
       this.darkStartBackgroundColor = 'transparent'
