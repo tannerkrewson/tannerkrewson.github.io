@@ -5,7 +5,7 @@
       :style="{ backgroundColor: darkStartBackgroundColor }"
       :class="{ transition: darkStartTransition }"
     ></div>
-    <div class="gradient-background"></div>
+    <div id="vanta" class="stationary-background"></div>
     <div class="container">
       <div class="full-title">
         <div class="profile">
@@ -494,6 +494,9 @@ body {
 
 .gradient-background {
   background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.stationary-background {
   background-repeat: no-repeat;
   width: 100%;
   top: -80px;
