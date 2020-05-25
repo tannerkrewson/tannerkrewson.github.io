@@ -602,8 +602,14 @@ a:visited {
   color: grey;
 }
 
+body {
+  font-family: 'Jost', sans-serif;
+  font-weight: 400;
+}
+
 .full-title .display-4 {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
 }
 
 span.avoidwrap {

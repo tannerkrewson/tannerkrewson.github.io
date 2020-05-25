@@ -35,12 +35,11 @@ export default {
 </script>
 <style>
 .card-title {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Jost', sans-serif;
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .card-subtitle {
-  font-family: 'Lato', sans-serif;
 }
 </style>
