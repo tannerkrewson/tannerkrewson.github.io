@@ -1,14 +1,15 @@
 <template>
   <div id="current-song">
     <span class="avoidwrap">{{ listenText }}</span>
-    <span class="avoidwrap"
-      ><a
+    <span class="avoidwrap">
+      <a
         target="_blank"
         href="//www.youtube.com/results?search_query=kusuri o takusan+Taeko Onuki"
         >{{ theTitle }}</a
       >
-      <span v-if="theArtist">by</span><i> {{ theArtist }}</i></span
-    >
+      <span v-if="theArtist">by</span>
+      <i>{{ theArtist }}</i>
+    </span>
   </div>
 </template>
 <script>

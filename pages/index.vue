@@ -20,7 +20,6 @@
           <span class="title">{{ titleText }}</span>
         </h1>
         <div>
-          <div class="full-name">Tanner Krewson</div>
           <span>
             <a href="#" @click="popupEmail">Email</a>
           </span>
@@ -50,9 +49,9 @@
           </span>
           •
           <span>
-            <a target="_blank" href="https://www.last.fm/user/TankTan38">
-              Last.fm
-            </a>
+            <a target="_blank" href="https://www.last.fm/user/TankTan38"
+              >Last.fm</a
+            >
           </span>
           <listening />
         </div>
@@ -819,10 +818,6 @@ span.avoidwrap {
   position: relative;
   margin-bottom: 12px;
   transition: all 0.2s ease-in;
-}
-
-.full-name {
-  font-size: 1.2rem;
 }
 
 /*
