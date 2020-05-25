@@ -160,359 +160,151 @@
         </div>
 
         <div class="row">
-          <div class="col-md-6 card-col">
-            <div class="card">
-              <div class="card-block">
-                <h3 class="card-title">Drawphone</h3>
-                <p class="card-text">
-                  A simple game of draw what you see, and guess what your
-                  friends drew. Over 100,000 drawings and guesses have been
-                  submitted to date! Grab four or more of your friends, and play
-                  Drawphone right in your phone's web browser.
-                </p>
-                <div class="card-buttons">
-                  <a
-                    href="https://drawphone.tannerkrewson.com/"
-                    target="_blank"
-                  >
-                    <button type="button" class="btn btn-outline-dark">
-                      Play Drawphone
-                    </button>
-                  </a>
-                  <a
-                    href="https://github.com/tannerkrewson/drawphone"
-                    target="_blank"
-                  >
-                    <button type="button" class="btn btn-outline-dark">
-                      View on GitHub
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 card-col">
-            <div class="card">
-              <div class="card-block">
-                <h3 class="card-title">Mutual Music</h3>
-                <p class="card-text">
-                  Using your Spotify accounts, Mutual Music creates a playlist
-                  of songs you and a friend both love. No more fighting over
-                  whose music to play! It's like mutual friends on Facebook, but
-                  for your favorite songs.
-                </p>
-                <div class="card-buttons">
-                  <a
-                    href="https://www.tannerkrewson.com/mutual-music/"
-                    target="_blank"
-                  >
-                    <button type="button" class="btn btn-outline-dark">
-                      Try it Out
-                    </button>
-                  </a>
-                  <a
-                    href="https://github.com/tannerkrewson/mutual-music"
-                    target="_blank"
-                  >
-                    <button type="button" class="btn btn-outline-dark">
-                      View on GitHub
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <project-card
+            title="Drawphone"
+            left-button-href="https://drawphone.tannerkrewson.com/"
+            left-button-text="Play Drawphone"
+            right-button-href="https://github.com/tannerkrewson/drawphone"
+            right-button-text="View on GitHub"
+            >A simple game of draw what you see, and guess what your friends
+            drew. Over 100,000 drawings and guesses have been submitted to date!
+            Grab four or more of your friends, and play Drawphone right in your
+            phone's web browser.</project-card
+          >
+          <project-card
+            title="Mutual Music"
+            left-button-href="https://www.tannerkrewson.com/mutual-music/"
+            left-button-text="Try it Out"
+            right-button-href="https://github.com/tannerkrewson/mutual-music"
+            right-button-text="View on GitHub"
+            >Using your Spotify accounts, Mutual Music creates a playlist of
+            songs you and a friend both love. No more fighting over whose music
+            to play! It's like mutual friends on Facebook, but for your favorite
+            songs.</project-card
+          >
         </div>
 
         <div class="row">
-          <div class="col-md-6 card-col">
-            <div class="card">
-              <div class="card-block">
-                <h3 class="card-title">PTSU Exposed</h3>
-                <p class="card-text">
-                  Apple and Google have been secretly installing a microchip in
-                  smartphones that sends psychoelectric waves into the minds of
-                  their users, allowing the highest bidding advertisers to
-                  influence consumers' brand preferences. Discover the biggest
-                  conspiracy in the history of mankind with PTSU Exposed.
-                </p>
-                <div class="card-buttons">
-                  <a
-                    href="https://www.tannerkrewson.com/ptsu/secret"
-                    target="_blank"
-                  >
-                    <button type="button" class="btn btn-outline-dark">
-                      I'm confused
-                    </button>
-                  </a>
-                  <a href="https://www.tannerkrewson.com/ptsu/" target="_blank">
-                    <button type="button" class="btn btn-outline-dark">
-                      Go to PTSU Exposed
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <project-card
+            title="PTSU Exposed"
+            left-button-href="https://www.tannerkrewson.com/ptsu/secret"
+            left-button-text="I'm confused"
+            right-button-href="https://www.tannerkrewson.com/ptsu/"
+            right-button-text="Go to PTSU Exposed"
+            >Apple and Google have been secretly installing a microchip in
+            smartphones that sends psychoelectric waves into the minds of their
+            users, allowing the highest bidding advertisers to influence
+            consumers' brand preferences. Discover the biggest conspiracy in the
+            history of mankind with PTSU Exposed.</project-card
+          >
 
-          <div class="col-md-6 card-col">
-            <div class="card">
-              <div class="card-block">
-                <h3 class="card-title">Connect 4</h3>
-                <p class="card-text">
-                  A multi-year effort between myself and my friend, Kevin
-                  Shannon. Try the local and online multiplayer modes, or test
-                  your skills against the wicked-smart AI in single player.
-                </p>
-                <div class="card-buttons">
-                  <a href="https://kevinshannon.dev/connect4/" target="_blank">
-                    <button type="button" class="btn btn-outline-dark">
-                      Play Connect 4
-                    </button>
-                  </a>
-                  <a
-                    href="https://github.com/kevin-shannon/connect4"
-                    target="_blank"
-                  >
-                    <button type="button" class="btn btn-outline-dark">
-                      View on GitHub
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <project-card
+            title="Connect 4"
+            left-button-href="https://kevinshannon.dev/connect4/"
+            left-button-text="Play Connect 4"
+            right-button-href="https://github.com/kevin-shannon/connect4"
+            right-button-text="View on GitHub"
+            >A multi-year effort between myself and my friend, Kevin Shannon.
+            Try the local and online multiplayer modes, or test your skills
+            against the wicked-smart AI in single player.</project-card
+          >
         </div>
 
         <div class="row">
-          <div class="col-md-6 card-col">
-            <div class="card">
-              <div class="card-block">
-                <h3 class="card-title">Spyout</h3>
-                <p class="card-text">
-                  A recreation of the board game The Resistance, made in the
-                  style of my previous game, Drawphone. Gather 5 to 10 of your
-                  friends, and prepare yourself for major trust issues.
-                </p>
-                <div class="card-buttons">
-                  <a href="https://spyout.tannerkrewson.com/" target="_blank">
-                    <button type="button" class="btn btn-outline-dark">
-                      Play Spyout
-                    </button>
-                  </a>
-                  <a
-                    href="https://github.com/tannerkrewson/spyout"
-                    target="_blank"
-                  >
-                    <button type="button" class="btn btn-outline-dark">
-                      View on GitHub
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <project-card
+            title="Snakeout"
+            left-button-href="https://snakeout.tannerkrewson.com/"
+            left-button-text="Play Snakeout"
+            right-button-href="https://github.com/tannerkrewson/spyout"
+            right-button-text="View on GitHub"
+            >(formerly Spyout) A recreation of the board game The Resistance,
+            made in the style of my previous game, Drawphone. Gather 5 to 10 of
+            your friends, and prepare yourself for major trust
+            issues.</project-card
+          >
 
-          <div class="col-md-6 card-col">
-            <div class="card">
-              <div class="card-block">
-                <h3 class="card-title">Spotify-in-Common</h3>
-                <p class="card-text">
-                  Mutual Music's more flexible predecessor. Select two or more
-                  Spotify playlists, and Spotify-in-Common will generate a new
-                  playlist containing the songs present in all of the selected
-                  playlists.
-                </p>
-                <a href="https://www.tannerkrewson.com/sic/" target="_blank">
-                  <button type="button" class="btn btn-outline-dark">
-                    Try it Out
-                  </button>
-                </a>
-                <a href="https://github.com/tannerkrewson/sic/" target="_blank">
-                  <button type="button" class="btn btn-outline-dark">
-                    View on GitHub
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
+          <project-card
+            title="Spotify-in-Common"
+            left-button-href="https://www.tannerkrewson.com/sic/"
+            left-button-text="Try it Out"
+            right-button-href="https://github.com/tannerkrewson/sic/"
+            right-button-text="View on GitHub"
+            >Mutual Music's more flexible predecessor. Select two or more
+            Spotify playlists, and Spotify-in-Common will generate a new
+            playlist containing the songs present in all of the selected
+            playlists.</project-card
+          >
         </div>
 
         <div class="row">
-          <div class="col-md-6 card-col">
-            <div class="card">
-              <div class="card-block">
-                <h3 class="card-title">Vidocracy</h3>
-                <p class="card-text">
-                  Bring democracy to your party's YouTube videos! Open Vidocracy
-                  in your phone's browser, and start voting on videos and songs
-                  to be played on the big screen.
-                </p>
-                <div class="card-buttons">
-                  <a href="http://vidocracy.tannerkrewson.com/" target="_blank">
-                    <button type="button" class="btn btn-outline-dark">
-                      Try Vidocracy
-                    </button>
-                  </a>
-                  <a
-                    href="https://github.com/tannerkrewson/vidocracy"
-                    target="_blank"
-                  >
-                    <button type="button" class="btn btn-outline-dark">
-                      View on GitHub
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 card-col">
-            <div class="card">
-              <div class="card-block">
-                <h3 class="card-title">A Kiosk That's Not Trash</h3>
-                <p class="card-text">
-                  I volunteer for an organization called SAB at my university
-                  that plans events and concerts for the students. The website
-                  we were using to track ticket sales was born from the depths
-                  of hell, so I created a better one that records sales into a
-                  Google Sheet.
-                </p>
-                <div class="card-buttons">
-                  <a
-                    href="https://www.tannerkrewson.com/a-kiosk-thats-not-trash/"
-                    target="_blank"
-                  >
-                    <button type="button" class="btn btn-outline-dark">
-                      Try it Out
-                    </button>
-                  </a>
-                  <a
-                    href="https://github.com/tannerkrewson/a-kiosk-thats-not-trash"
-                    target="_blank"
-                  >
-                    <button type="button" class="btn btn-outline-dark">
-                      View on GitHub
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <project-card
+            title="Vidocracy"
+            left-button-href="http://vidocracy.tannerkrewson.com/"
+            left-button-text="Try Vidocracy"
+            right-button-href="https://github.com/tannerkrewson/vidocracy"
+            right-button-text="View on GitHub"
+            >Bring democracy to your party's YouTube videos! Open Vidocracy in
+            your phone's browser, and start voting on videos and songs to be
+            played on the big screen.</project-card
+          >
+          <project-card
+            title="A Kiosk That's Not Trash"
+            left-button-href="https://www.tannerkrewson.com/a-kiosk-thats-not-trash/"
+            left-button-text="Try it Out"
+            right-button-href="https://github.com/tannerkrewson/a-kiosk-thats-not-trash"
+            right-button-text="View on GitHub"
+            >I volunteer for an organization called SAB at my university that
+            plans events and concerts for the students. The website we were
+            using to track ticket sales was born from the depths of hell, so I
+            created a better one that records sales into a Google
+            Sheet.</project-card
+          >
         </div>
 
         <div class="row">
-          <div class="col-md-6 card-col">
-            <div class="card">
-              <div class="card-block">
-                <h3 class="card-title">Backspace Bowling</h3>
-                <p class="card-text">
-                  Experience a "game" that was conceived on a computer in my
-                  personal finance class in high school. Even though it's
-                  barebones, it's still pretty fun. Hold down Backspace to bowl!
-                </p>
-                <div class="card-buttons">
-                  <a
-                    href="https://www.tannerkrewson.com/backspace-bowling/"
-                    target="_blank"
-                  >
-                    <button type="button" class="btn btn-outline-dark">
-                      Try it Out
-                    </button>
-                  </a>
-                  <a
-                    href="https://github.com/tannerkrewson/backspace-bowling"
-                    target="_blank"
-                  >
-                    <button type="button" class="btn btn-outline-dark">
-                      View on GitHub
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <project-card
+            title="Backspace Bowling"
+            left-button-href="https://www.tannerkrewson.com/backspace-bowling/"
+            left-button-text="Try it Out"
+            right-button-href="https://github.com/tannerkrewson/backspace-bowling"
+            right-button-text="View on GitHub"
+            >Experience a "game" that was conceived on a computer in my personal
+            finance class in high school. Even though it's barebones, it's still
+            pretty fun. Hold down Backspace to bowl!
+          </project-card>
 
-          <div class="col-md-6 card-col">
-            <div class="card">
-              <div class="card-block">
-                <h3 class="card-title">Calorie Countdown</h3>
-                <p class="card-text">
-                  Calorie Countdown represents the cutting edge of calorie
-                  counting research, and is the pinnacle of diet and nutrition
-                  tracking software today. Just kidding; it's really just a
-                  calculator with nothing but a minus button that I use every
-                  day at my college dining halls.
-                </p>
-                <div class="card-buttons">
-                  <a
-                    href="https://www.tannerkrewson.com/calorie-countdown/"
-                    target="_blank"
-                  >
-                    <button type="button" class="btn btn-outline-dark">
-                      Try it Out
-                    </button>
-                  </a>
-                  <a
-                    href="https://github.com/tannerkrewson/calorie-countdown"
-                    target="_blank"
-                  >
-                    <button type="button" class="btn btn-outline-dark">
-                      View on GitHub
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+          <project-card
+            title="Calorie Countdown"
+            left-button-href="https://www.tannerkrewson.com/calorie-countdown/"
+            left-button-text="Try it Out"
+            right-button-href="https://github.com/tannerkrewson/calorie-countdown"
+            right-button-text="View on GitHub"
+            >Calorie Countdown represents the cutting edge of calorie counting
+            research, and is the pinnacle of diet and nutrition tracking
+            software today. Just kidding; it's really just a calculator with
+            nothing but a minus button that I use every day at my college dining
+            halls.</project-card
+          >
         </div>
 
         <div class="row">
-          <div class="col-md-6 card-col">
-            <div class="card">
-              <div class="card-block">
-                <h3 class="card-title">Red Team LAN</h3>
-                <p class="card-text">
-                  The group I founded to play computer games with my friends.
-                  We've had over 30 events since 2013. Check out the timelapses
-                  of the parties on the website; they're pretty neat!
-                </p>
-                <div class="card-buttons">
-                  <a
-                    href="https://www.tannerkrewson.com/redteamlan/"
-                    target="_blank"
-                  >
-                    <button type="button" class="btn btn-outline-dark">
-                      View the website
-                    </button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6 card-col">
-            <div class="card">
-              <div class="card-block">
-                <h3 class="card-title">Lansite</h3>
-                <p class="card-text">
-                  Connect your LAN party attendees with announcements, private
-                  messaging, custom votes, and matchmaking. Lansite is fully
-                  modular and features extensive documentation, so hosts can
-                  extend it to fit their needs effortlessly.
-                </p>
-                <a
-                  href="https://github.com/tannerkrewson/lansite"
-                  target="_blank"
-                >
-                  <button type="button" class="btn btn-outline-dark">
-                    View on GitHub
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
+          <project-card
+            title="Red Team LAN"
+            left-button-href="https://www.tannerkrewson.com/redteamlan"
+            left-button-text="View the website"
+            >The group I founded to play computer games with my friends. We've
+            had over 30 events since 2013. Check out the timelapses of the
+            parties on the website; they're pretty neat!</project-card
+          >
+          <project-card
+            title="Lansite"
+            left-button-href="https://github.com/tannerkrewson/lansite"
+            left-button-text="View on GitHub"
+            >Connect your LAN party attendees with announcements, private
+            messaging, custom votes, and matchmaking. Lansite is fully modular
+            and features extensive documentation, so hosts can extend it to fit
+            their needs effortlessly.</project-card
+          >
         </div>
 
         <br />
@@ -532,13 +324,14 @@ import Typed from 'typed.js'
 import Swal from 'sweetalert2'
 
 import Listening from '~/components/Listening.vue'
+import ProjectCard from '~/components/ProjectCard.vue'
 
 const Popup = Swal.mixin({
   confirmButtonColor: '#45c299'
 })
 
 export default {
-  components: { Listening },
+  components: { Listening, ProjectCard },
   data: () => ({
     year: new Date().getFullYear(),
     titleText: '',
@@ -818,33 +611,6 @@ span.avoidwrap {
   position: relative;
   margin-bottom: 12px;
   transition: all 0.2s ease-in;
-}
-
-/*
- *	Project Cards
- */
-.card-col {
-  display: flex;
-  padding: 0.5em;
-}
-
-.card {
-  background-color: rgba(200, 200, 255, 0.2);
-  border: none;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  padding: 1.25rem;
-}
-
-.card-title {
-  font-family: 'Lato', sans-serif;
-  font-size: 2rem;
-  font-weight: 300;
-}
-
-.card-subtitle {
-  font-family: 'Lato', sans-serif;
 }
 
 .company-logo {
