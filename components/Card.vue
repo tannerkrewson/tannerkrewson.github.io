@@ -20,6 +20,6 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 1em;
+  padding: 1.5em 1em;
 }
 </style>
