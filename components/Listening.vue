@@ -4,7 +4,9 @@
     <span class="avoidwrap">
       <a
         target="_blank"
-        href="//www.youtube.com/results?search_query=kusuri o takusan+Taeko Onuki"
+        :href="
+          '//www.youtube.com/results?search_query=' + theTitle + '+' + theArtist
+        "
         >{{ theTitle }}</a
       >
       <span v-if="theArtist">by</span>
