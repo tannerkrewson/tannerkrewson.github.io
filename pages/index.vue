@@ -334,6 +334,12 @@
         <footer>
           tannerkrewson,
           <span id="footer-year">{{ year }}</span>
+          <br />
+          <a
+            href="https://github.com/tannerkrewson/tannerkrewson.github.io"
+            target="_blank"
+            >View on GitHub</a
+          >
         </footer>
       </div>
     </div>
