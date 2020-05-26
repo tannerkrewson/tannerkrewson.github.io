@@ -166,11 +166,12 @@
             left-button-text="Play Drawphone"
             right-button-href="https://github.com/tannerkrewson/drawphone"
             right-button-text="View on GitHub"
-            >A simple game of draw what you see, and guess what your friends
+          >
+            A simple game of draw what you see, and guess what your friends
             drew. Over 1.5 million drawings and guesses have been submitted to
             date! Grab four or more of your friends, and play Drawphone right in
-            your phone's web browser.</project-card
-          >
+            your phone's web browser.
+          </project-card>
 
           <project-card
             title="Spyfall"
@@ -178,10 +179,11 @@
             left-button-text="Play Spyfall"
             right-button-href="https://github.com/tannerkrewson/spyfall"
             right-button-text="View on GitHub"
-            >The game that inspired Drawphone, spyfall.crabhat.com, was removed
-            from the Internet. So, I recovered the old code, rewrote most of it,
-            and added a few new features. Give it a shot!</project-card
           >
+            The game that inspired Drawphone, spyfall.crabhat.com, was removed
+            from the Internet. So, I recovered the old code, rewrote most of it,
+            and added a few new features. Give it a shot!
+          </project-card>
         </div>
 
         <div class="row">
@@ -191,12 +193,13 @@
             left-button-text="I'm confused"
             right-button-href="https://www.tannerkrewson.com/ptsu/"
             right-button-text="Go to PTSU Exposed"
-            >Apple and Google have been secretly installing a microchip in
+          >
+            Apple and Google have been secretly installing a microchip in
             smartphones that sends psychoelectric waves into the minds of their
             users, allowing the highest bidding advertisers to influence
             consumers' brand preferences. Discover the biggest conspiracy in the
-            history of mankind with PTSU Exposed.</project-card
-          >
+            history of mankind with PTSU Exposed.
+          </project-card>
 
           <project-card
             title="Connect 4"
@@ -204,10 +207,11 @@
             left-button-text="Play Connect 4"
             right-button-href="https://github.com/kevin-shannon/connect4"
             right-button-text="View on GitHub"
-            >A multi-year effort between myself and my friend, Kevin Shannon.
-            Try the local and online multiplayer modes, or test your skills
-            against the wicked-smart AI in single player.</project-card
           >
+            A multi-year effort between myself and my friend, Kevin Shannon. Try
+            the local and online multiplayer modes, or test your skills against
+            the wicked-smart AI in single player.
+          </project-card>
         </div>
         <div class="row">
           <project-card
@@ -216,22 +220,23 @@
             left-button-text="Try it Out"
             right-button-href="https://github.com/tannerkrewson/mutual-music"
             right-button-text="View on GitHub"
-            >Using your Spotify accounts, Mutual Music creates a playlist of
+          >
+            Using your Spotify accounts, Mutual Music creates a playlist of
             songs you and a friend both love. No more fighting over whose music
             to play! It's like mutual friends on Facebook, but for your favorite
-            songs.</project-card
-          >
+            songs.
+          </project-card>
           <project-card
             title="Spotify-in-Common"
             left-button-href="https://www.tannerkrewson.com/sic/"
             left-button-text="Try it Out"
             right-button-href="https://github.com/tannerkrewson/sic/"
             right-button-text="View on GitHub"
-            >Mutual Music's more flexible predecessor. Select two or more
-            Spotify playlists, and Spotify-in-Common will generate a new
-            playlist containing the songs present in all of the selected
-            playlists.</project-card
           >
+            Mutual Music's more flexible predecessor. Select two or more Spotify
+            playlists, and Spotify-in-Common will generate a new playlist
+            containing the songs present in all of the selected playlists.
+          </project-card>
         </div>
 
         <div class="row">
@@ -241,10 +246,11 @@
             left-button-text="Play Snakeout"
             right-button-href="https://github.com/tannerkrewson/snakeout"
             right-button-text="View on GitHub"
-            >A recreation of the board game The Resistance, made in the style of
-            Drawphone and Spyfall. Gather 5 to 10 of your friends, and prepare
-            yourself for major trust issues.</project-card
           >
+            A recreation of the board game The Resistance, made in the style of
+            Drawphone and Spyfall. Gather 5 to 10 of your friends, and prepare
+            yourself for major trust issues.
+          </project-card>
 
           <project-card
             title="COVID-19 Stimulus Check Calculator"
@@ -252,10 +258,11 @@
             left-button-text="Try it out"
             right-button-href="https://github.com/tannerkrewson/coronacalc"
             right-button-text="View on GitHub"
-            >A simple quiz to see the difference in the stimulus check amount
-            that one would receive under the final CARES act, versus the
-            Democrats' original, failed act.</project-card
           >
+            A simple quiz to see the difference in the stimulus check amount
+            that one would receive under the final CARES act, versus the
+            Democrats' original, failed act.
+          </project-card>
         </div>
 
         <div class="row">
@@ -265,22 +272,23 @@
             left-button-text="Try Vidocracy"
             right-button-href="https://github.com/tannerkrewson/vidocracy"
             right-button-text="View on GitHub"
-            >Bring democracy to your party's YouTube videos! Open Vidocracy in
-            your phone's browser, and start voting on videos and songs to be
-            played on the big screen.</project-card
           >
+            Bring democracy to your party's YouTube videos! Open Vidocracy in
+            your phone's browser, and start voting on videos and songs to be
+            played on the big screen.
+          </project-card>
           <project-card
             title="A Kiosk That's Not Trash"
             left-button-href="https://www.tannerkrewson.com/a-kiosk-thats-not-trash/"
             left-button-text="Try it Out"
             right-button-href="https://github.com/tannerkrewson/a-kiosk-thats-not-trash"
             right-button-text="View on GitHub"
-            >When I was in college, I volunteered for an organization called SAB
+          >
+            When I was in college, I volunteered for an organization called SAB
             that plans events and concerts for the students. The website we were
             using to track ticket sales was born from the depths of hell, so I
-            created a better one that records sales into a Google
-            Sheet.</project-card
-          >
+            created a better one that records sales into a Google Sheet.
+          </project-card>
         </div>
 
         <div class="row">
@@ -290,7 +298,8 @@
             left-button-text="Try it Out"
             right-button-href="https://github.com/tannerkrewson/backspace-bowling"
             right-button-text="View on GitHub"
-            >This game was made exclusively on a computer in my Personal Finance
+          >
+            This game was made exclusively on a computer in my Personal Finance
             class during my senior year of high school when I should have been
             doing other things. It's okay though, I got an A in the class. Even
             though it's barebones, it's still pretty fun. Hold down Backspace to
@@ -303,12 +312,13 @@
             left-button-text="Try it Out"
             right-button-href="https://github.com/tannerkrewson/calorie-countdown"
             right-button-text="View on GitHub"
-            >Calorie Countdown represents the cutting edge of calorie counting
+          >
+            Calorie Countdown represents the cutting edge of calorie counting
             research, and is the pinnacle of diet and nutrition tracking
             software today. Just kidding; it's really just a calculator with
             nothing but a minus button that I used every day at the buffet
-            dining halls in college.</project-card
-          >
+            dining halls in college.
+          </project-card>
         </div>
 
         <div class="row">
@@ -316,19 +326,21 @@
             title="Red Team LAN"
             left-button-href="https://www.tannerkrewson.com/redteamlan"
             left-button-text="View the website"
-            >The group I founded to play computer games with my friends. We've
-            had over 30 events since 2013. Check out the timelapses of the
-            parties on the website; they're pretty neat!</project-card
           >
+            The group I founded to play computer games with my friends. We've
+            had over 30 events since 2013. Check out the timelapses of the
+            parties on the website; they're pretty neat!
+          </project-card>
           <project-card
             title="Lansite"
             left-button-href="https://github.com/tannerkrewson/lansite"
             left-button-text="View on GitHub"
-            >Connect your LAN party attendees with announcements, private
+          >
+            Connect your LAN party attendees with announcements, private
             messaging, custom votes, and matchmaking. Lansite is fully modular
             and features extensive documentation, so hosts can effortlessly
-            extend it to fit their needs.</project-card
-          >
+            extend it to fit their needs.
+          </project-card>
         </div>
 
         <br />
@@ -496,7 +508,7 @@ export default {
 
     popupReplayAnimation() {
       Popup.fire({
-        title: 'Want to see the cool typing intro animation again?',
+        title: 'Want to see the typing intro animation again?',
         type: 'question',
         showCancelButton: true,
         confirmButtonText: 'Yes',
@@ -626,11 +638,13 @@ body {
 .full-title a,
 a:active,
 a:visited {
+  display: inline-block;
   color: #212529;
+  transition: all 0.2s ease-in-out;
 }
 
-.full-title a:hover {
-  color: grey;
+a:hover {
+  transform: scale(1.05);
 }
 
 body {
@@ -641,6 +655,7 @@ body {
 .full-title .display-4 {
   font-family: 'Jost', sans-serif;
   font-weight: 500;
+  font-size: 2.5em;
 }
 
 span.avoidwrap {
