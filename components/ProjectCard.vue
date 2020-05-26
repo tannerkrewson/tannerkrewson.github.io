@@ -4,7 +4,7 @@
     <p class="card-text">
       <slot></slot>
     </p>
-    <div class="card-buttons">
+    <div>
       <a :href="leftButtonHref" target="_blank">
         <button type="button" class="btn btn-outline-dark">
           {{ leftButtonText }}

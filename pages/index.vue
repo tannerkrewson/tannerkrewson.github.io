@@ -59,42 +59,73 @@
 
       <div id="project-cards" :class="{ nonexistent: projectCardsNonexistent }">
         <div class="row">
-          <div class="col-md-6 card-col">
-            <div class="card">
+          <div class="col-md-2"></div>
+          <div class="col-md-8 card-col" style="justify-content: center;">
+            <div class="card" style="width: 40em;">
               <div class="card-block">
-                <div class="card-title" style="margin-top: 8px;">
-                  <a href="#" @click="popupDSS">
-                    <img class="company-logo" src="dss-dark.svg" />
-                  </a>
+                <div class="card-title" style="margin-top: 1.5em 0;">
+                  <img
+                    class="company-logo"
+                    src="dss-dark.svg"
+                    style="width: 9em; margin: .3em 0;"
+                  />
                 </div>
-                <br />
-                <h5 class="card-subtitle">Software Engineer Intern</h5>
-                <div class="card-text">Fall 2019 - New York City</div>
-                <br />
-                <div class="card-buttons">
-                  <button
-                    type="button"
-                    class="btn btn-outline-dark"
-                    @click="popupDSS"
-                  >
-                    More Info
-                  </button>
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div style="margin:1em;">
+                      <h5 class="card-subtitle">Associate Software Engineer</h5>
+                      <div class="card-text">
+                        Started June 2020 - Remote
+                      </div>
+
+                      <div class="card-buttons">
+                        <button
+                          type="button"
+                          class="btn btn-outline-dark"
+                          @click="popupDSSFull"
+                        >
+                          More Info
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div style="margin:1em;">
+                      <h5 class="card-subtitle">Software Engineer Intern</h5>
+                      <div class="card-text">Fall 2019 - New York City</div>
+
+                      <div class="card-buttons">
+                        <button
+                          type="button"
+                          class="btn btn-outline-dark"
+                          @click="popupDSSIntern"
+                        >
+                          More Info
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-6 card-col">
+          <div class="col-md-2"></div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 card-col">
             <div class="card">
               <div class="card-block">
                 <div class="card-title" style="margin-top: 8px;">
-                  <a href="#" @click="popupGS">
-                    <img class="company-logo" src="gs-dark.svg" />
-                  </a>
+                  <img
+                    class="company-logo"
+                    src="gs-dark.svg"
+                    @click="popupGS"
+                  />
                 </div>
                 <br />
                 <h5 class="card-subtitle">Technology Analyst Intern</h5>
                 <div class="card-text">Summer 2019 - New York City</div>
-                <br />
                 <div class="card-buttons">
                   <button
                     type="button"
@@ -107,20 +138,19 @@
               </div>
             </div>
           </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-6 card-col">
+          <div class="col-md-4 card-col">
             <div class="card">
               <div class="card-block">
                 <div class="card-title" style="margin-top: 8px;">
-                  <a href="#" @click="popupDisney">
-                    <img class="company-logo" src="disney-parks-dark.svg" />
-                  </a>
+                  <img
+                    class="company-logo"
+                    src="disney-parks-dark.svg"
+                    @click="popupDisney"
+                  />
                 </div>
+                <br />
                 <h5 class="card-subtitle">Software Engineer Intern</h5>
                 <div class="card-text">Summer 2018 - Seattle, WA</div>
-                <br />
                 <div class="card-buttons">
                   <button
                     type="button"
@@ -133,18 +163,19 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 card-col">
+          <div class="col-md-4 card-col">
             <div class="card">
               <div class="card-block">
                 <div class="card-title" style="margin-top: 8px;">
-                  <a href="#" @click="popupESPN">
-                    <img class="company-logo" src="espn-dark.svg" />
-                  </a>
+                  <img
+                    class="company-logo"
+                    src="espn-dark.svg"
+                    @click="popupESPN"
+                  />
                 </div>
                 <br />
                 <h5 class="card-subtitle">Software Engineer Intern</h5>
                 <div class="card-text">Summer 2017 - Bristol, CT</div>
-                <br />
                 <div class="card-buttons">
                   <button
                     type="button"
@@ -484,15 +515,29 @@ export default {
       })
     },
 
-    popupDSS() {
+    popupDSSIntern() {
       const innerHTML =
-        '<p>For my fourth and final internship, I joined the ' +
-        'team at Disney Streaming Services in NYC for the launch of Disney+. ' +
-        'What a cool experience!' +
+        '<p>For my fourth and final internship, I spent my fall semester ' +
+        'at Disney Streaming Services in NYC for the launch of Disney+. ' +
+        'I joined the Web Platform Architecture team, which manages ' +
+        'the servers for disneyplus.com on AWS. I also created an internal ' +
+        'tool with Next.js and React to quickly find and view information ' +
+        'about any microservice in the company.' +
         '</p>'
       Popup.fire({
         html: innerHTML,
         imageUrl: 'https://i.imgur.com/dmIzkPU.png'
+      })
+    },
+
+    popupDSSFull() {
+      const innerHTML =
+        '<p>After graduating in May 2020, I returned to Disney Streaming ' +
+        'Services as a full-time software engineer. I onboarded and work ' +
+        'remotely due to the COVID-19 pandemic.' +
+        '</p>'
+      Popup.fire({
+        html: innerHTML
       })
     },
 
@@ -676,6 +721,10 @@ span.avoidwrap {
 /* fix line appearing between buttons */
 .card a:hover {
   color: transparent;
+}
+
+.card-buttons {
+  margin-top: 0.8em;
 }
 
 .btn-outline-dark {
