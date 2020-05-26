@@ -10,7 +10,7 @@
 <style>
 .card-col {
   display: flex;
-  padding: 0.5em;
+  padding: 0.8em;
 }
 
 .card {
@@ -20,6 +20,6 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 1.25rem;
+  padding: 1em;
 }
 </style>

@@ -167,9 +167,9 @@
             right-button-href="https://github.com/tannerkrewson/drawphone"
             right-button-text="View on GitHub"
             >A simple game of draw what you see, and guess what your friends
-            drew. Over 100,000 drawings and guesses have been submitted to date!
-            Grab four or more of your friends, and play Drawphone right in your
-            phone's web browser.</project-card
+            drew. Over 1.5 million drawings and guesses have been submitted to
+            date! Grab four or more of your friends, and play Drawphone right in
+            your phone's web browser.</project-card
           >
 
           <project-card
@@ -241,10 +241,9 @@
             left-button-text="Play Snakeout"
             right-button-href="https://github.com/tannerkrewson/snakeout"
             right-button-text="View on GitHub"
-            >(formerly Spyout) A recreation of the board game The Resistance,
-            made in the style of my previous game, Drawphone. Gather 5 to 10 of
-            your friends, and prepare yourself for major trust
-            issues.</project-card
+            >A recreation of the board game The Resistance, made in the style of
+            Drawphone and Spyfall. Gather 5 to 10 of your friends, and prepare
+            yourself for major trust issues.</project-card
           >
 
           <project-card
@@ -276,8 +275,8 @@
             left-button-text="Try it Out"
             right-button-href="https://github.com/tannerkrewson/a-kiosk-thats-not-trash"
             right-button-text="View on GitHub"
-            >I volunteer for an organization called SAB at my university that
-            plans events and concerts for the students. The website we were
+            >When I was in college, I volunteered for an organization called SAB
+            that plans events and concerts for the students. The website we were
             using to track ticket sales was born from the depths of hell, so I
             created a better one that records sales into a Google
             Sheet.</project-card
@@ -291,9 +290,11 @@
             left-button-text="Try it Out"
             right-button-href="https://github.com/tannerkrewson/backspace-bowling"
             right-button-text="View on GitHub"
-            >Experience a "game" that was conceived on a computer in my personal
-            finance class in high school. Even though it's barebones, it's still
-            pretty fun. Hold down Backspace to bowl!
+            >This game was made exclusively on a computer in my Personal Finance
+            class during my senior year of high school when I should have been
+            doing other things. It's okay though, I got an A in the class. Even
+            though it's barebones, it's still pretty fun. Hold down Backspace to
+            bowl!
           </project-card>
 
           <project-card
@@ -305,8 +306,8 @@
             >Calorie Countdown represents the cutting edge of calorie counting
             research, and is the pinnacle of diet and nutrition tracking
             software today. Just kidding; it's really just a calculator with
-            nothing but a minus button that I use every day at my college dining
-            halls.</project-card
+            nothing but a minus button that I used every day at the buffet
+            dining halls in college.</project-card
           >
         </div>
 
@@ -325,8 +326,8 @@
             left-button-text="View on GitHub"
             >Connect your LAN party attendees with announcements, private
             messaging, custom votes, and matchmaking. Lansite is fully modular
-            and features extensive documentation, so hosts can extend it to fit
-            their needs effortlessly.</project-card
+            and features extensive documentation, so hosts can effortlessly
+            extend it to fit their needs.</project-card
           >
         </div>
 
@@ -356,7 +357,7 @@ import Listening from '~/components/Listening.vue'
 import ProjectCard from '~/components/ProjectCard.vue'
 
 const Popup = Swal.mixin({
-  confirmButtonColor: '#45c299'
+  confirmButtonColor: '#7c9cff'
 })
 
 export default {
@@ -526,7 +527,7 @@ body {
 }
 
 .stationary-background {
-  background: #4060c2;
+  background: #7c9cff;
   background-repeat: no-repeat;
   width: 100%;
   top: -80px;
