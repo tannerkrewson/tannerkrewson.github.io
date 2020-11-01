@@ -191,15 +191,56 @@
         </div>
 
         <div class="row">
+          <div class="col-md-2"></div>
+          <div class="col-md-8 card-col" style="justify-content: center;">
+            <div class="card" style="width: 35em;">
+              <div class="card-block">
+                <div
+                  class="card-title"
+                  style="margin-top: -1.5em; margin-bottom: .4em;"
+                >
+                  <img
+                    class="company-logo"
+                    src="https://rocketcrab.com/rocketcrab-logo-text.svg"
+                    style="max-height: 5em;"
+                  />
+                </div>
+                <p class="card-text">
+                  rocketcrab is a lobby service and launcher for mobile web
+                  party games.
+                </p>
+                <div class="card-buttons">
+                  <a href="https://rocketcrab.com/" target="_blank">
+                    <button type="button" class="btn btn-outline-dark">
+                      Try it out
+                    </button>
+                  </a>
+                  <a
+                    href="https://github.com/tannerkrewson/rocketcrab"
+                    target="_blank"
+                  >
+                    <button type="button" class="btn btn-outline-dark">
+                      View on GitHub
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+
+        <div class="row">
           <project-card
             title="Drawphone"
             left-button-href="https://drawphone.tannerkrewson.com/"
             left-button-text="Play Drawphone"
             right-button-href="https://github.com/tannerkrewson/drawphone"
             right-button-text="View on GitHub"
+            rocketcrab="true"
           >
             A simple game of draw what you see, and guess what your friends
-            drew. Over 1.5 million drawings and guesses have been submitted to
+            drew. Over 7 million drawings and guesses have been submitted to
             date! Grab four or more of your friends, and play Drawphone right in
             your phone's web browser.
           </project-card>
@@ -210,6 +251,7 @@
             left-button-text="Play Spyfall"
             right-button-href="https://github.com/tannerkrewson/spyfall"
             right-button-text="View on GitHub"
+            rocketcrab="true"
           >
             The game that inspired Drawphone, spyfall.crabhat.com, was removed
             from the Internet. So, I recovered the old code, rewrote most of it,
@@ -248,7 +290,7 @@
           <project-card
             title="Mutual Music"
             left-button-href="https://www.tannerkrewson.com/mutual-music/"
-            left-button-text="Try it Out"
+            left-button-text="Try it out"
             right-button-href="https://github.com/tannerkrewson/mutual-music"
             right-button-text="View on GitHub"
           >
@@ -260,7 +302,7 @@
           <project-card
             title="Spotify-in-Common"
             left-button-href="https://www.tannerkrewson.com/sic/"
-            left-button-text="Try it Out"
+            left-button-text="Try it out"
             right-button-href="https://github.com/tannerkrewson/sic/"
             right-button-text="View on GitHub"
           >
@@ -277,6 +319,7 @@
             left-button-text="Play Snakeout"
             right-button-href="https://github.com/tannerkrewson/snakeout"
             right-button-text="View on GitHub"
+            rocketcrab="true"
           >
             A recreation of the board game The Resistance, made in the style of
             Drawphone and Spyfall. Gather 5 to 10 of your friends, and prepare
@@ -311,7 +354,7 @@
           <project-card
             title="A Kiosk That's Not Trash"
             left-button-href="https://www.tannerkrewson.com/a-kiosk-thats-not-trash/"
-            left-button-text="Try it Out"
+            left-button-text="Try it out"
             right-button-href="https://github.com/tannerkrewson/a-kiosk-thats-not-trash"
             right-button-text="View on GitHub"
           >
@@ -326,7 +369,7 @@
           <project-card
             title="Backspace Bowling"
             left-button-href="https://www.tannerkrewson.com/backspace-bowling/"
-            left-button-text="Try it Out"
+            left-button-text="Try it out"
             right-button-href="https://github.com/tannerkrewson/backspace-bowling"
             right-button-text="View on GitHub"
           >
@@ -340,7 +383,7 @@
           <project-card
             title="Calorie Countdown"
             left-button-href="https://www.tannerkrewson.com/calorie-countdown/"
-            left-button-text="Try it Out"
+            left-button-text="Try it out"
             right-button-href="https://github.com/tannerkrewson/calorie-countdown"
             right-button-text="View on GitHub"
           >
@@ -400,7 +443,7 @@ import Listening from '~/components/Listening.vue'
 import ProjectCard from '~/components/ProjectCard.vue'
 
 const Popup = Swal.mixin({
-  confirmButtonColor: '#7c9cff'
+  confirmButtonColor: '#a42e05'
 })
 
 export default {
@@ -459,7 +502,7 @@ export default {
       Popup.fire({
         title: 'Email me!',
         html:
-          '<div style="color: light-blue; text-align:center;"><a href="mailto:tannerkrewson@gmail.com">tannerkrewson@gmail.com</a></div>'
+          '<div style="color: #a42e05; text-align:center;"><a href="mailto:tannerkrewson@gmail.com">tannerkrewson@gmail.com</a></div>'
       })
     },
 
@@ -584,7 +627,7 @@ body {
 }
 
 .stationary-background {
-  background: #7c9cff;
+  background: #a42e05;
   background-repeat: no-repeat;
   width: 100%;
   top: -80px;

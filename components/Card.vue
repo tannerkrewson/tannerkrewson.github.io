@@ -1,5 +1,5 @@
 <template>
-  <div class="col-md-6 card-col">
+  <div :class="'col-md-' + cardWidth + ' card-col'">
     <div class="card">
       <div class="card-block">
         <slot></slot>
@@ -7,6 +7,13 @@
     </div>
   </div>
 </template>
+<script>
+export default {
+  props: {
+    cardWidth: { type: String, default: '6' }
+  }
+}
+</script>
 <style>
 .card-col {
   display: flex;

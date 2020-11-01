@@ -1,6 +1,14 @@
 <template>
-  <card>
-    <h3 class="card-title">{{ title }}</h3>
+  <card :card-width="cardWidth">
+    <h3 class="card-title">
+      {{ title }}
+      <div class="rocketcrab-superscript">
+        <img
+          v-if="rocketcrab"
+          src="https://rocketcrab.com/rocketcrab-logo-text.svg"
+        />
+      </div>
+    </h3>
     <p class="card-text">
       <slot></slot>
     </p>
@@ -29,7 +37,9 @@ export default {
     leftButtonHref: { type: String, default: '' },
     leftButtonText: { type: String, default: '' },
     rightButtonHref: { type: String, default: '' },
-    rightButtonText: { type: String, default: '' }
+    rightButtonText: { type: String, default: '' },
+    cardWidth: { type: String, default: '6' },
+    rocketcrab: { type: Boolean, default: false }
   }
 }
 </script>
@@ -40,6 +50,16 @@ export default {
   font-weight: 500;
 }
 
-.card-subtitle {
+.rocketcrab-superscript {
+  display: inline-block;
+  overflow: hidden;
+  width: 1.6em;
+  margin-left: -0.4em;
+  margin-bottom: 0.4em;
+  margin-top: -1em;
+}
+
+.rocketcrab-superscript img {
+  margin: -1.4em -0.2em -1.6em -0.2em;
 }
 </style>
