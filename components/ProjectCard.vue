@@ -2,11 +2,8 @@
   <card :card-width="cardWidth">
     <h3 class="card-title">
       {{ title }}
-      <div class="rocketcrab-superscript">
-        <img
-          v-if="rocketcrab"
-          src="https://rocketcrab.com/rocketcrab-logo-text.svg"
-        />
+      <div v-if="rocketcrab" class="rocketcrab-superscript">
+        <img src="https://rocketcrab.com/rocketcrab-logo-text.svg" />
       </div>
     </h3>
     <p class="card-text">
