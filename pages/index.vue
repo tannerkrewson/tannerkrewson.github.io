@@ -35,10 +35,16 @@
               >LinkedIn</a
             >
           </span>
-          <br />
+          •
           <span>
             <a target="_blank" href="https://www.facebook.com/tannermkrewson/"
               >Facebook</a
+            >
+          </span>
+          <br />
+          <span>
+            <a target="_blank" href="https://vsco.co/tannerkrewson/gallery"
+              >VSCO</a
             >
           </span>
           •
@@ -53,6 +59,12 @@
               >Last.fm</a
             >
           </span>
+          •
+          <span>
+            <a target="_blank" href="https://letterboxd.com/tannerkrewson/"
+              >Letterboxd</a
+            >
+          </span>
           <listening />
         </div>
       </div>
@@ -65,9 +77,8 @@
               <div class="card-block">
                 <div class="card-title" style="margin-top: 1.5em 0;">
                   <img
-                    class="company-logo"
-                    src="dss-dark.svg"
-                    style="width: 9em; margin: .3em 0;"
+                    src="ds-long-dark.svg"
+                    style="max-width: 18em; margin: .3em 0;"
                   />
                 </div>
                 <div class="row">
@@ -443,7 +454,7 @@ import Listening from '~/components/Listening.vue'
 import ProjectCard from '~/components/ProjectCard.vue'
 
 const Popup = Swal.mixin({
-  confirmButtonColor: '#a42e05'
+  confirmButtonColor: '#3369FF'
 })
 
 export default {
@@ -502,13 +513,13 @@ export default {
       Popup.fire({
         title: 'Email me!',
         html:
-          '<div style="color: #a42e05; text-align:center;"><a href="mailto:tannerkrewson@gmail.com">tannerkrewson@gmail.com</a></div>'
+          '<div style="color: #3369FF; text-align:center;"><a href="mailto:tannerkrewson@gmail.com">tannerkrewson@gmail.com</a></div>'
       })
     },
 
     popupESPN() {
       const innerHTML =
-        'ESPN was a great first internship! I spent the first ​6​ ​weeks​ on ​the​ ​Consumer​ ​Tech​ ​Ops​ ​team,​ ​' +
+        'ESPN was my first internship! I worked out of ESPN Headquarters in Bristol, Connecticut. I spent the first ​6​ ​weeks​ on ​the​ ​Consumer​ ​Tech​ ​Ops​ ​team,​ ​' +
         'diagnosing​ ​and​ ​fixing​ ​bugs across​ ​ESPN.com​. I spent the ' +
         'remaining ​4​ ​weeks​ ​on​ ​the​ ESPN.com ​feature​ ​development​ ​team,​ ​working on the homepage news feed, a redesign ' +
         "for MLB Gamecast, and an internal tool called Feed Manager. Here's " +
@@ -561,7 +572,7 @@ export default {
     popupDSSIntern() {
       const innerHTML =
         '<p>For my fourth and final internship, I spent my fall semester ' +
-        'at Disney Streaming Services in NYC for the launch of Disney+. ' +
+        'at Disney Streaming in NYC for the launch of Disney+. ' +
         'I joined the Web Platform Architecture team, which manages ' +
         'the servers for disneyplus.com on AWS. I also created an internal ' +
         'tool with Next.js and React to quickly find and view information ' +
@@ -576,8 +587,10 @@ export default {
     popupDSSFull() {
       const innerHTML =
         '<p>After graduating in May 2020, I returned to Disney Streaming ' +
-        'Services as a full-time software engineer. I onboarded and work ' +
-        'remotely due to the COVID-19 pandemic.' +
+        'as a full-time software engineer. I onboarded and work ' +
+        'remotely due to the COVID-19 pandemic. I am on the Web Core ' +
+        'team, which develops the web browser video player for Disney+, Hulu ' +
+        'ESPN+, Star+, and NHL.TV.' +
         '</p>'
       Popup.fire({
         html: innerHTML
@@ -627,7 +640,7 @@ body {
 }
 
 .stationary-background {
-  background: #a42e05;
+  background: #3369ff;
   background-repeat: no-repeat;
   width: 100%;
   top: -80px;
@@ -785,7 +798,7 @@ span.avoidwrap {
 }
 
 #swal2-content a {
-  color: #45c299;
+  color: #3369ff;
 }
 
 #swal2-content a:hover {
