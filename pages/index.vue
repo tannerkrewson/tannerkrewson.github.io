@@ -84,9 +84,9 @@
                 <div class="row">
                   <div class="col-lg-6">
                     <div style="margin:1em;">
-                      <h5 class="card-subtitle">Associate Software Engineer</h5>
+                      <h5 class="card-subtitle">Software Engineer II</h5>
                       <div class="card-text">
-                        Started June 2020 - Remote
+                        Since June 2020 - New York City
                       </div>
 
                       <div class="card-buttons">
@@ -338,7 +338,7 @@
           </project-card>
 
           <project-card
-            title="COVID-19 Stimulus Check Calculator"
+            title="COVID-19 Stimulus Calculator"
             left-button-href="https://www.tannerkrewson.com/coronacalc"
             left-button-text="Try it out"
             right-button-href="https://github.com/tannerkrewson/coronacalc"
@@ -412,9 +412,9 @@
             left-button-href="https://www.tannerkrewson.com/redteamlan"
             left-button-text="View the website"
           >
-            The group I founded to play computer games with my friends. We've
-            had over 30 events since 2013. Check out the timelapses of the
-            parties on the website; they're pretty neat!
+            The group I founded to play computer games with my friends from high
+            school. We had had 32 events from 2013 to 2020. Check out the
+            timelapses of the parties on the website; they're pretty neat!
           </project-card>
           <project-card
             title="Lansite"
@@ -587,8 +587,9 @@ export default {
     popupDSSFull() {
       const innerHTML =
         '<p>After graduating in May 2020, I returned to Disney Streaming ' +
-        'as a full-time software engineer. I onboarded and work ' +
-        'remotely due to the COVID-19 pandemic. I am on the Web Core ' +
+        'as a full-time software engineer. I onboarded ' +
+        'remotely due to the COVID-19 pandemic, but in July 2021, I moved to ' +
+        'New York City. I am on the Web Playback Experience ' +
         'team, which develops the web browser video player for Disney+, Hulu ' +
         'ESPN+, Star+, and NHL.TV.' +
         '</p>'
