@@ -28,7 +28,7 @@
     "sweetalert2": "^9.13.1",
     "three": "^0.116.1",
     "typed.js": "^2.0.11",
-    "vanta": "^0.5.15"
+    "vanta": "^0.5.24"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^2.0.0",
