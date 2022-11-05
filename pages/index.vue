@@ -2,8 +2,8 @@
   <div>
     <div
       id="dark-start"
-      :style="{ backgroundColor: darkStartBackgroundColor }"
-      :class="{ transition: darkStartTransition }"
+      :style="{ backgroundColor: startBackgroundColor }"
+      :class="{ transition: startTransition }"
     ></div>
     <div id="vanta" class="stationary-background"></div>
     <div class="container">
@@ -77,7 +77,7 @@
               <div class="card-block">
                 <div class="card-title" style="margin-top: 1.5em 0;">
                   <img
-                    src="ds-long-dark.svg"
+                    src="ds-long-light.svg"
                     style="max-width: 18em; margin: .3em 0;"
                   />
                 </div>
@@ -92,7 +92,7 @@
                       <div class="card-buttons">
                         <button
                           type="button"
-                          class="btn btn-outline-dark"
+                          class="btn btn-outline-light"
                           @click="popupDSSFull"
                         >
                           More Info
@@ -108,7 +108,7 @@
                       <div class="card-buttons">
                         <button
                           type="button"
-                          class="btn btn-outline-dark"
+                          class="btn btn-outline-light"
                           @click="popupDSSIntern"
                         >
                           More Info
@@ -130,7 +130,7 @@
                 <div class="card-title" style="margin-top: 8px;">
                   <img
                     class="company-logo"
-                    src="gs-dark.svg"
+                    src="gs-light.svg"
                     @click="popupGS"
                   />
                 </div>
@@ -140,7 +140,7 @@
                 <div class="card-buttons">
                   <button
                     type="button"
-                    class="btn btn-outline-dark"
+                    class="btn btn-outline-light"
                     @click="popupGS"
                   >
                     More Info
@@ -155,7 +155,7 @@
                 <div class="card-title" style="margin-top: 8px;">
                   <img
                     class="company-logo"
-                    src="disney-parks-dark.svg"
+                    src="disney-parks-light.svg"
                     @click="popupDisney"
                   />
                 </div>
@@ -165,7 +165,7 @@
                 <div class="card-buttons">
                   <button
                     type="button"
-                    class="btn btn-outline-dark"
+                    class="btn btn-outline-light"
                     @click="popupDisney"
                   >
                     More Info
@@ -180,7 +180,7 @@
                 <div class="card-title" style="margin-top: 8px;">
                   <img
                     class="company-logo"
-                    src="espn-dark.svg"
+                    src="espn-light.svg"
                     @click="popupESPN"
                   />
                 </div>
@@ -190,7 +190,7 @@
                 <div class="card-buttons">
                   <button
                     type="button"
-                    class="btn btn-outline-dark"
+                    class="btn btn-outline-light"
                     @click="popupESPN"
                   >
                     More Info
@@ -212,7 +212,7 @@
                 >
                   <img
                     class="company-logo"
-                    src="https://rocketcrab.com/rocketcrab-logo-text.svg"
+                    src="rocketcrab-logo-text-light.svg"
                     style="max-height: 5em;"
                   />
                 </div>
@@ -222,7 +222,7 @@
                 </p>
                 <div class="card-buttons">
                   <a href="https://rocketcrab.com/" target="_blank">
-                    <button type="button" class="btn btn-outline-dark">
+                    <button type="button" class="btn btn-outline-light">
                       Try it out
                     </button>
                   </a>
@@ -230,7 +230,7 @@
                     href="https://github.com/tannerkrewson/rocketcrab"
                     target="_blank"
                   >
-                    <button type="button" class="btn btn-outline-dark">
+                    <button type="button" class="btn btn-outline-light">
                       View on GitHub
                     </button>
                   </a>
@@ -454,7 +454,7 @@ import Listening from '~/components/Listening.vue'
 import ProjectCard from '~/components/ProjectCard.vue'
 
 const Popup = Swal.mixin({
-  confirmButtonColor: '#3369FF'
+  confirmButtonColor: '#140D33'
 })
 
 export default {
@@ -463,10 +463,10 @@ export default {
     year: new Date().getFullYear(),
     titleText: '',
     typingTitleZIndex: () => 100,
-    typingTitleColor: () => 'white',
+    typingTitleColor: () => '#DDDDDD',
     projectCardsNonexistent: true,
-    darkStartBackgroundColor: '#212529',
-    darkStartTransition: false
+    startBackgroundColor: '#DDDDDD',
+    startTransition: false
   }),
   mounted() {
     const shouldPlayAnimation = !(Cookies.get('typed') === 'true')
@@ -477,7 +477,7 @@ export default {
     if (shouldPlayAnimation) {
       // start the title above the shadow, and as white text
       this.typingTitleZIndex = 100
-      this.typingTitleColor = 'white'
+      this.typingTitleColor = '#212529'
 
       // execute the animation
       new Typed('.title', {
@@ -501,19 +501,19 @@ export default {
       this.projectCardsNonexistent = false
 
       // get rid of the solid color covering the page
-      this.darkStartBackgroundColor = 'transparent'
+      this.startBackgroundColor = 'transparent'
 
       // invert title text color
-      this.typingTitleColor = '#212529'
+      this.typingTitleColor = '#DDDDDD'
 
       // begin the circle transition
-      this.darkStartTransition = true
+      this.startTransition = true
     },
     popupEmail() {
       Popup.fire({
         title: 'Email me!',
         html:
-          '<div style="color: #3369FF; text-align:center;"><a href="mailto:tannerkrewson@gmail.com">tannerkrewson@gmail.com</a></div>'
+          '<div style="color: #140D33; text-align:center;"><a href="mailto:tannerkrewson@gmail.com">tannerkrewson@gmail.com</a></div>'
       })
     },
 
@@ -631,7 +631,8 @@ export default {
  */
 body {
   padding-bottom: 2rem;
-  color: #212529;
+  /* dark color: #212529; */
+  color: #dddddd;
   text-align: center;
 }
 
@@ -640,7 +641,7 @@ body {
 }
 
 .stationary-background {
-  background: #3369ff;
+  background: #140d33;
   background-repeat: no-repeat;
   width: 100%;
   top: -80px;
@@ -668,7 +669,7 @@ body {
   transform: translate(-50%, -50%);
   border-radius: 100%;
   animation-duration: 1s;
-  box-shadow: 0px 0px 0px 100vmax #212529;
+  box-shadow: 0px 0px 0px 100vmax #dddddd;
   width: 150vmax;
   height: 150vmax;
 }
@@ -740,7 +741,8 @@ body {
 a:active,
 a:visited {
   display: inline-block;
-  color: #212529;
+  /* dark color: #212529; */
+  color: #dddddd;
   transition: all 0.2s ease-in-out;
 }
 
@@ -784,9 +786,11 @@ span.avoidwrap {
   margin-top: 0.8em;
 }
 
-.btn-outline-dark {
-  color: #212529;
-  border-color: #212529;
+.btn-outline-light {
+  /* dark color: #212529; */
+  color: #dddddd;
+  /* dark border-color: #212529; */
+  border-color: #dddddd;
   margin-bottom: 0.3em;
 }
 
@@ -799,7 +803,7 @@ span.avoidwrap {
 }
 
 #swal2-content a {
-  color: #3369ff;
+  color: #140d33;
 }
 
 #swal2-content a:hover {

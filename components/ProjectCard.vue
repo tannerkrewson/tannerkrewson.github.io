@@ -11,12 +11,12 @@
     </p>
     <div>
       <a :href="leftButtonHref" target="_blank">
-        <button type="button" class="btn btn-outline-dark">
+        <button type="button" class="btn btn-outline-light">
           {{ leftButtonText }}
         </button>
       </a>
       <a v-if="rightButtonHref" :href="rightButtonHref" target="_blank">
-        <button type="button" class="btn btn-outline-dark">
+        <button type="button" class="btn btn-outline-light">
           {{ rightButtonText }}
         </button>
       </a>
