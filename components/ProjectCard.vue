@@ -45,6 +45,11 @@ export default {
   font-family: 'Jost', sans-serif;
   font-size: 2rem;
   font-weight: 500;
+  font-style: italic;
+}
+
+.card-subtitle {
+  font-style: italic;
 }
 
 .rocketcrab-superscript {
