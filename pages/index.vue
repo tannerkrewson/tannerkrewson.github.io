@@ -594,7 +594,8 @@ export default {
         'ESPN+, Star+, and NHL.TV.' +
         '</p>'
       Popup.fire({
-        html: innerHTML
+        html: innerHTML,
+        imageUrl: 'https://i.imgur.com/wsHJaI0.jpg'
       })
     },
 
