@@ -15,7 +15,7 @@ export default {
       THREE,
       mouseControls: false,
       touchControls: false,
-      color: '#140D33'
+      color: '#bca37f'
     })
   }
 }

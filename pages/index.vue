@@ -77,7 +77,7 @@
               <div class="card-block">
                 <div class="card-title" style="margin-top: 1.5em 0;">
                   <img
-                    src="ds-long-light.svg"
+                    src="ds-long-dark.svg"
                     style="max-width: 18em; margin: .3em 0;"
                   />
                 </div>
@@ -130,7 +130,7 @@
                 <div class="card-title" style="margin-top: 8px;">
                   <img
                     class="company-logo"
-                    src="gs-light.svg"
+                    src="gs-dark.svg"
                     @click="popupGS"
                   />
                 </div>
@@ -155,7 +155,7 @@
                 <div class="card-title" style="margin-top: 8px;">
                   <img
                     class="company-logo"
-                    src="disney-parks-light.svg"
+                    src="disney-parks-dark.svg"
                     @click="popupDisney"
                   />
                 </div>
@@ -180,7 +180,7 @@
                 <div class="card-title" style="margin-top: 8px;">
                   <img
                     class="company-logo"
-                    src="espn-light.svg"
+                    src="espn-dark.svg"
                     @click="popupESPN"
                   />
                 </div>
@@ -212,7 +212,7 @@
                 >
                   <img
                     class="company-logo"
-                    src="rocketcrab-logo-text-light.svg"
+                    src="rocketcrab-logo-text-dark.svg"
                     style="max-height: 5em;"
                   />
                 </div>
@@ -454,7 +454,7 @@ import Listening from '~/components/Listening.vue'
 import ProjectCard from '~/components/ProjectCard.vue'
 
 const Popup = Swal.mixin({
-  confirmButtonColor: '#140D33'
+  confirmButtonColor: '#8a614c'
 })
 
 export default {
@@ -465,7 +465,7 @@ export default {
     typingTitleZIndex: () => 100,
     typingTitleColor: () => '#DDDDDD',
     projectCardsNonexistent: true,
-    startBackgroundColor: '#DDDDDD',
+    startBackgroundColor: '#113946',
     startTransition: false
   }),
   mounted() {
@@ -477,7 +477,7 @@ export default {
     if (shouldPlayAnimation) {
       // start the title above the shadow, and as white text
       this.typingTitleZIndex = 100
-      this.typingTitleColor = '#212529'
+      this.typingTitleColor = '#ead7bb'
 
       // execute the animation
       new Typed('.title', {
@@ -504,7 +504,7 @@ export default {
       this.startBackgroundColor = 'transparent'
 
       // invert title text color
-      this.typingTitleColor = '#DDDDDD'
+      this.typingTitleColor = '#113946'
 
       // begin the circle transition
       this.startTransition = true
@@ -513,7 +513,7 @@ export default {
       Popup.fire({
         title: 'Email me!',
         html:
-          '<div style="color: #140D33; text-align:center;"><a href="mailto:tannerkrewson@gmail.com">tannerkrewson@gmail.com</a></div>'
+          '<div style="color: #8a614c; text-align:center;"><a href="mailto:tannerkrewson@gmail.com">tannerkrewson@gmail.com</a></div>'
       })
     },
 
@@ -632,17 +632,13 @@ export default {
  */
 body {
   padding-bottom: 2rem;
-  /* dark color: #212529; */
-  color: #dddddd;
+  color: #113946;
+  /* light color: #dddddd; */
   text-align: center;
 }
 
-.gradient-background {
-  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-}
-
 .stationary-background {
-  background: #140d33;
+  background: #8a614c;
   background-repeat: no-repeat;
   width: 100%;
   top: -80px;
@@ -670,7 +666,7 @@ body {
   transform: translate(-50%, -50%);
   border-radius: 100%;
   animation-duration: 1s;
-  box-shadow: 0px 0px 0px 100vmax #dddddd;
+  box-shadow: 0px 0px 0px 100vmax #113946;
   width: 150vmax;
   height: 150vmax;
 }
@@ -742,8 +738,8 @@ body {
 a:active,
 a:visited {
   display: inline-block;
-  /* dark color: #212529; */
-  color: #dddddd;
+  /* dark color: #113946; */
+  color: #113946;
   transition: all 0.2s ease-in-out;
 }
 
@@ -788,10 +784,10 @@ span.avoidwrap {
 }
 
 .btn-outline-light {
-  /* dark color: #212529; */
-  color: #dddddd;
-  /* dark border-color: #212529; */
-  border-color: #dddddd;
+  /* dark color: #113946; */
+  color: #113946;
+  /* dark border-color: #113946; */
+  border-color: #113946;
   margin-bottom: 0.3em;
 }
 
@@ -804,7 +800,7 @@ span.avoidwrap {
 }
 
 #swal2-content a {
-  color: #140d33;
+  color: #8a614c;
 }
 
 #swal2-content a:hover {

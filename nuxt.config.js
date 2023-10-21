@@ -13,7 +13,7 @@ export default {
         name: 'description',
         content: process.env.npm_package_description || ''
       },
-      { name: 'theme-color', content: '#140D33' }
+      { name: 'theme-color', content: '#8a614c' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },

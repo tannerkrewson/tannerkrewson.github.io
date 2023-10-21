@@ -21,7 +21,7 @@ export default {
 }
 
 .card {
-  background-color: rgba(4, 4, 5, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
   border: none;
   backdrop-filter: blur(6px);
   display: flex;
