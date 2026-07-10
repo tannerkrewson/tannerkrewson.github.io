@@ -171,15 +171,10 @@
   </div>
 
   <div class="content-pad">
-    <div class="section-heading-row">
-      <div>
-        <h2>Work Experience</h2>
-      </div>
-    </div>
 
     <!-- Disney Streaming -->
-    <div class="work-spotlight" style="text-align: center; margin-bottom: 48px;">
-      <img src="ds-long-dark.svg" alt="Disney Streaming" style="max-height: 28px; margin-bottom: 20px; filter: brightness(0) invert(1);" />
+    <div style="text-align: center; margin-bottom: 48px;">
+      <img src="ds-long-light.svg" alt="Disney Streaming" style="max-height: 60px; margin-bottom: 20px;" />
       <div class="feature-grid">
         <div class="feature-item">
           <h4>Software Engineer II</h4>
@@ -197,19 +192,19 @@
     <!-- Other internships -->
     <div class="feature-grid" style="grid-template-columns: repeat(3, 1fr);">
       <div class="feature-item">
-        <img src="gs-dark.svg" alt="Goldman Sachs" class="company-icon" style="filter: brightness(0) invert(1);" />
+        <img src="gs-light.svg" alt="Goldman Sachs" class="company-icon" />
         <h4>Technology Analyst Intern</h4>
         <p>Summer 2019 — New York City</p>
         <button type="button" class="btn-secondary" onclick={popupGS}>More Info</button>
       </div>
       <div class="feature-item">
-        <img src="disney-parks-dark.svg" alt="Disney" class="company-icon" style="filter: brightness(0) invert(1);" />
+        <img src="disney-parks-light.svg" alt="Disney" class="company-icon" />
         <h4>Software Engineer Intern</h4>
         <p>Summer 2018 — Seattle, WA</p>
         <button type="button" class="btn-secondary" onclick={popupDisney}>More Info</button>
       </div>
       <div class="feature-item">
-        <img src="espn-dark.svg" alt="ESPN" class="company-icon" style="filter: brightness(0) invert(1);" />
+        <img src="espn-light.svg" alt="ESPN" class="company-icon" />
         <h4>Software Engineer Intern</h4>
         <p>Summer 2017 — Bristol, CT</p>
         <button type="button" class="btn-secondary" onclick={popupESPN}>More Info</button>
@@ -237,7 +232,7 @@
   </div>
 
   <div class="subsection-pad" style="text-align: center;">
-    <img src="rocketcrab-logo-text-dark.svg" alt="rocketcrab" style="max-height: 40px; margin-bottom: 12px; filter: brightness(0) invert(1);" />
+    <img src="rocketcrab-logo-text-light.svg" alt="rocketcrab" style="max-height: 80px; margin-bottom: 12px;" />
     <p style="max-width: 420px; margin: 0 auto 16px; color: var(--text-default);">
       rocketcrab is a lobby service and launcher for mobile web party games.
     </p>
@@ -267,10 +262,6 @@
   </div>
 
   <div class="content-pad">
-    <div class="section-heading-row">
-      <h2>Projects</h2>
-    </div>
-
     <div class="project-grid">
       <ProjectCard
         title="Drawphone"
@@ -306,7 +297,7 @@
 
       <ProjectCard
         title="Connect 4"
-        leftButtonHref="https://kevinshannon.dev/connect4/"
+        leftButtonHref="https://kevinshannon.com/connect4/"
         leftButtonText="Play Connect 4"
         rightButtonHref="https://github.com/kevin-shannon/connect4"
         rightButtonText="View on GitHub"
@@ -415,12 +406,12 @@
 </section>
 
 <!-- Footer -->
-<footer class="framed-section" style="background: var(--brand-blue); color: rgba(255,255,255,0.9);">
-  <div class="content-pad" style="text-align: center; font-size: 14px;">
-    <p style="margin-bottom: 8px;">tannerkrewson, {year}</p>
-    <a href="https://github.com/tannerkrewson/tannerkrewson.github.io" target="_blank" style="color: rgba(255,255,255,0.8);">View on GitHub</a>
-  </div>
-</footer>
+  <footer class="framed-section" style="border-top: 1px solid var(--line-subtle);">
+    <div class="content-pad" style="text-align: center; font-size: 14px;">
+      <p style="margin-bottom: 8px; color: var(--text-muted);">tannerkrewson, {year}</p>
+      <a href="https://github.com/tannerkrewson/tannerkrewson.github.io" target="_blank">View on GitHub</a>
+    </div>
+  </footer>
 
 <style>
   /* hero grid background */
@@ -442,30 +433,6 @@
   }
   .social-link:hover {
     color: var(--text-strong);
-  }
-
-  /* Section heading */
-  .section-heading-row {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    padding-bottom: 24px;
-    margin-bottom: 32px;
-    border-bottom: 1px solid var(--line-subtle);
-  }
-  .section-heading-row h2 {
-    font-size: 25.6px;
-    line-height: 32px;
-    font-weight: 300;
-    color: var(--text-strong);
-  }
-
-  /* Work spotlight */
-  .work-spotlight {
-    background: var(--surface-deep);
-    border: 1px solid var(--line-subtle);
-    border-radius: 4px;
-    padding: 32px 24px;
   }
 
   /* Feature grids */
