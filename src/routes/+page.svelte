@@ -190,7 +190,7 @@
     </div>
 
     <!-- Other internships -->
-    <div class="feature-grid" style="grid-template-columns: repeat(3, 1fr);">
+    <div class="feature-grid three-col" style="grid-template-columns: repeat(3, 1fr);">
       <div class="feature-item">
         <img src="gs-light.svg" alt="Goldman Sachs" class="company-icon" />
         <h4>Technology Analyst Intern</h4>
@@ -232,7 +232,7 @@
   </div>
 
   <div class="subsection-pad" style="text-align: center;">
-    <img src="rocketcrab-logo-text-light.svg" alt="rocketcrab" style="max-height: 80px; margin-bottom: 12px;" />
+    <img src="rocketcrab-logo-text-light.svg" alt="rocketcrab" style="max-height: 90px; margin-bottom: 12px;" />
     <p style="max-width: 420px; margin: 0 auto 16px; color: var(--text-default);">
       rocketcrab is a lobby service and launcher for mobile web party games.
     </p>
@@ -409,7 +409,7 @@
   <footer class="framed-section" style="border-top: 1px solid var(--line-subtle);">
     <div class="content-pad" style="text-align: center; font-size: 14px;">
       <p style="margin-bottom: 8px; color: var(--text-muted);">tannerkrewson, {year}</p>
-      <a href="https://github.com/tannerkrewson/tannerkrewson.github.io" target="_blank">View on GitHub</a>
+      <a href="https://github.com/tannerkrewson/tannerkrewson.github.io" target="_blank" class="social-link">View on GitHub</a>
     </div>
   </footer>
 
@@ -445,6 +445,9 @@
   @media (max-width: 640px) {
     .feature-grid {
       grid-template-columns: 1fr;
+    }
+    .three-col {
+      grid-template-columns: 1fr !important;
     }
   }
 
