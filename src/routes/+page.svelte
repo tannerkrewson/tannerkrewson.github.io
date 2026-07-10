@@ -4,9 +4,13 @@
   import ProjectCard from '$lib/ProjectCard.svelte';
 
   const Popup = Swal.mixin({
-    confirmButtonColor: '#155dfc',
     background: '#181a1f',
-    color: '#a8adb7'
+    color: '#a8adb7',
+    buttonsStyling: false,
+    customClass: {
+      confirmButton: 'btn-secondary',
+      cancelButton: 'btn-secondary'
+    }
   });
 
   let year = $state(new Date().getFullYear());
