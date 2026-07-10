@@ -191,7 +191,7 @@
     </div>
 
     <!-- Other internships -->
-    <div class="feature-grid three-col" style="grid-template-columns: repeat(3, 1fr);">
+    <div class="feature-grid three-col" style="grid-template-columns: repeat(3, 1fr); text-align: center;">
       <div class="feature-item">
         <img src="gs-light.svg" alt="Goldman Sachs" class="company-icon" />
         <h4>Technology Analyst Intern</h4>
@@ -361,7 +361,7 @@
 
   <div class="subsection-pad" style="text-align: center;">
     <button class="more-toggle" onclick={() => showMore = !showMore}>
-      {showMore ? 'show less ↑' : 'more projects ↓'}
+      {showMore ? 'show less ↑' : 'out-of-date projects ↓'}
     </button>
   </div>
 
@@ -547,7 +547,7 @@
   .more-toggle {
     background: none;
     border: none;
-    color: var(--text-muted);
+    color: rgba(114, 122, 137, 0.5);
     font-size: 14px;
     cursor: pointer;
     padding: 0;
@@ -555,12 +555,9 @@
     transition: color 0.15s ease;
   }
   .more-toggle:hover {
-    color: var(--text-default);
+    color: var(--text-muted);
   }
   :global(.swal2-image) {
-    margin-top: -1.25em !important;
-    margin-left: -1.25em !important;
-    max-width: calc(100% + 2.5em) !important;
     border-radius: 4px 4px 0 0 !important;
   }
 </style>
