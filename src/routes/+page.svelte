@@ -167,7 +167,7 @@
 </div>
 
 <!-- Work Experience -->
-<section class="framed-section">
+<section class="framed-section" style="background: radial-gradient(ellipse at 50% 30%, rgba(7,81,207,0.04) 0%, transparent 70%);">
   <div class="rail-left">
     <div class="rail-rule"></div>
   </div>
@@ -228,7 +228,7 @@
 </div>
 
 <!-- rocketcrab -->
-<section class="framed-section">
+<section class="framed-section" style="background: radial-gradient(ellipse at 50% 30%, rgba(7,81,207,0.04) 0%, transparent 70%);">
   <div class="rail-left">
     <div class="rail-rule"></div>
   </div>
