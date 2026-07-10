@@ -11,9 +11,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "js-cookie": "^3.0.5",
-    "sweetalert2": "^11.12.4",
-    "typed.js": "^2.1.0"
+    "sweetalert2": "^11.12.4"
   },
   "devDependencies": {
     "@sveltejs/adapter-static": "^3.0.8",

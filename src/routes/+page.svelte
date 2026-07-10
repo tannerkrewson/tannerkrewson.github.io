@@ -1,7 +1,4 @@
 <script>
-  import { onMount } from 'svelte';
-  import Cookies from 'js-cookie';
-  import Typed from 'typed.js';
   import Swal from 'sweetalert2';
 
   import Listening from '$lib/Listening.svelte';
@@ -11,48 +8,7 @@
     confirmButtonColor: '#8a614c'
   });
 
-  let titleText = $state('');
-  let typingTitleZIndex = $state(100);
-  let typingTitleColor = $state('#DDDDDD');
-  let projectCardsNonexistent = $state(true);
-  let startBackgroundColor = $state('#113946');
-  let startTransition = $state(false);
   let year = $state(new Date().getFullYear());
-
-  let typed;
-
-  onMount(() => {
-    const shouldPlayAnimation = !(Cookies.get('typed') === 'true');
-    const sixteenHours = 16 / 24;
-    Cookies.set('typed', 'true', { expires: sixteenHours });
-
-    if (shouldPlayAnimation) {
-      typingTitleZIndex = 100;
-      typingTitleColor = '#ead7bb';
-
-      typed = new Typed('#typing-title .title', {
-        strings: ['Tanner Krewson'],
-        typeSpeed: 100,
-        onComplete: () => {
-          setTimeout(() => showPage(), 300);
-        }
-      });
-    } else {
-      titleText = 'Tanner Krewson';
-      showPage();
-    }
-
-    return () => {
-      if (typed) typed.destroy();
-    };
-  });
-
-  function showPage() {
-    projectCardsNonexistent = false;
-    startBackgroundColor = 'transparent';
-    typingTitleColor = '#113946';
-    startTransition = true;
-  }
 
   function popupEmail() {
     Popup.fire({
@@ -138,30 +94,6 @@
       imageUrl: 'https://i.imgur.com/wsHJaI0.jpg'
     });
   }
-
-  function onTitleClick() {
-    if (projectCardsNonexistent) {
-      titleText = 'Tanner Krewson';
-      showPage();
-    } else {
-      popupReplayAnimation();
-    }
-  }
-
-  function popupReplayAnimation() {
-    Popup.fire({
-      title: 'Want to see the typing intro animation again?',
-      type: 'question',
-      showCancelButton: true,
-      confirmButtonText: 'Yes',
-      cancelButtonText: 'No'
-    }).then((result) => {
-      if (result.value) {
-        Cookies.set('typed', 'false');
-        location.reload();
-      }
-    });
-  }
 </script>
 
 <svelte:head>
@@ -170,23 +102,13 @@
 </svelte:head>
 
 <div>
-  <div
-    id="dark-start"
-    style="background-color: {startBackgroundColor};"
-    class:transition={startTransition}
-  ></div>
   <div class="container">
     <div class="full-title">
       <div class="profile">
         <img src="me.jpg" class="profile-pic" alt="Tanner Krewson" />
       </div>
-      <h1
-        id="typing-title"
-        class="display-4"
-        style="z-index: {typingTitleZIndex}; color: {typingTitleColor};"
-        onclick={onTitleClick}
-      >
-        <span class="title">{titleText}</span>
+      <h1 id="typing-title" class="display-4">
+        <span class="title">Tanner Krewson</span>
       </h1>
       <div>
         <span>
@@ -224,7 +146,7 @@
       </div>
     </div>
 
-    <div id="project-cards" class:nonexistent={projectCardsNonexistent}>
+    <div id="project-cards">
       <div class="row">
         <div class="col-md-2"></div>
         <div class="col-md-8 card-col" style="justify-content: center;">
@@ -614,49 +536,6 @@
     display: inline-block;
   }
 
-  #dark-start {
-    opacity: 1;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-    z-index: 1;
-    pointer-events: none;
-  }
-
-  #dark-start:before {
-    content: '';
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 100%;
-    animation-duration: 1s;
-    box-shadow: 0px 0px 0px 100vmax #113946;
-    width: 150vmax;
-    height: 150vmax;
-  }
-
-  .transition:before {
-    animation-name: spotlight;
-  }
-
-  .nonexistent {
-    display: none;
-  }
-
-  @keyframes spotlight {
-    from {
-      width: 0vmin;
-      height: 0vmin;
-    }
-    to {
-      width: 150vmax;
-      height: 150vmax;
-    }
-  }
-
   .full-title {
     padding-top: 0.5rem;
     padding-bottom: 1rem;
@@ -693,9 +572,7 @@
   }
 
   #typing-title {
-    position: relative;
     margin-bottom: 12px;
-    transition: all 0.2s ease-in;
   }
 
   .company-logo {
@@ -721,24 +598,5 @@
     margin-left: -1.25em;
     max-width: calc(100% + 2.5em);
     border-radius: 5px 5px 0px 0px;
-  }
-
-  :global(.typed-cursor) {
-    opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
-  }
-
-  @keyframes blink {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
   }
 </style>
