@@ -10,6 +10,7 @@
   });
 
   let year = $state(new Date().getFullYear());
+  let showMore = $state(false);
 
   function popupEmail() {
     Popup.fire({
@@ -306,26 +307,6 @@
       </ProjectCard>
 
       <ProjectCard
-        title="Mutual Music"
-        leftButtonHref="https://www.tannerkrewson.com/mutual-music/"
-        leftButtonText="Try it out"
-        rightButtonHref="https://github.com/tannerkrewson/mutual-music"
-        rightButtonText="View on GitHub"
-      >
-        Using your Spotify accounts, Mutual Music creates a playlist of songs you and a friend both love. No more fighting over whose music to play!
-      </ProjectCard>
-
-      <ProjectCard
-        title="Spotify-in-Common"
-        leftButtonHref="https://www.tannerkrewson.com/sic/"
-        leftButtonText="Try it out"
-        rightButtonHref="https://github.com/tannerkrewson/sic/"
-        rightButtonText="View on GitHub"
-      >
-        Mutual Music's more flexible predecessor. Select two or more Spotify playlists, and Spotify-in-Common will generate a new playlist containing the songs present in all of the selected playlists.
-      </ProjectCard>
-
-      <ProjectCard
         title="Snakeout"
         leftButtonHref="https://snakeout.tannerkrewson.com/"
         leftButtonText="Play Snakeout"
@@ -334,26 +315,6 @@
         rocketcrab={true}
       >
         A recreation of the board game The Resistance, made in the style of Drawphone and Spyfall. Gather 5 to 10 of your friends, and prepare yourself for major trust issues.
-      </ProjectCard>
-
-      <ProjectCard
-        title="COVID-19 Stimulus Calculator"
-        leftButtonHref="https://www.tannerkrewson.com/coronacalc"
-        leftButtonText="Try it out"
-        rightButtonHref="https://github.com/tannerkrewson/coronacalc"
-        rightButtonText="View on GitHub"
-      >
-        A simple quiz to see the difference in the stimulus check amount that one would receive under the final CARES act, versus the Democrats' original, failed act.
-      </ProjectCard>
-
-      <ProjectCard
-        title="Vidocracy"
-        leftButtonHref="http://vidocracy.tannerkrewson.com/"
-        leftButtonText="Try Vidocracy"
-        rightButtonHref="https://github.com/tannerkrewson/vidocracy"
-        rightButtonText="View on GitHub"
-      >
-        Bring democracy to your party's YouTube videos! Open Vidocracy in your phone's browser, and start voting on videos and songs to be played on the big screen.
       </ProjectCard>
 
       <ProjectCard
@@ -385,6 +346,64 @@
       >
         Calorie Countdown represents the cutting edge of calorie counting research, and is the pinnacle of diet and nutrition tracking software today. Just kidding; it's really just a calculator with nothing but a minus button that I used every day at the buffet dining halls in college.
       </ProjectCard>
+    </div>
+  </div>
+</section>
+
+<!-- More projects toggle -->
+<section class="framed-section">
+  <div class="rail-left">
+    <div class="rail-rule"></div>
+  </div>
+  <div class="rail-right">
+    <div class="rail-rule"></div>
+  </div>
+
+  <div class="subsection-pad" style="text-align: center;">
+    <button class="more-toggle" onclick={() => showMore = !showMore}>
+      {showMore ? 'show less ↑' : 'more projects ↓'}
+    </button>
+  </div>
+
+  {#if showMore}
+    <div class="project-grid" style="padding-bottom: 48px;">
+      <ProjectCard
+        title="Mutual Music"
+        leftButtonHref="https://www.tannerkrewson.com/mutual-music/"
+        leftButtonText="Try it out"
+        rightButtonHref="https://github.com/tannerkrewson/mutual-music"
+        rightButtonText="View on GitHub"
+      >
+        Using your Spotify accounts, Mutual Music creates a playlist of songs you and a friend both love. No more fighting over whose music to play!
+      </ProjectCard>
+
+      <ProjectCard
+        title="Spotify-in-Common"
+        leftButtonHref="https://www.tannerkrewson.com/sic/"
+        leftButtonText="Try it out"
+        rightButtonHref="https://github.com/tannerkrewson/sic/"
+        rightButtonText="View on GitHub"
+      >
+        Mutual Music's more flexible predecessor. Select two or more Spotify playlists, and Spotify-in-Common will generate a new playlist containing the songs present in all of the selected playlists.
+      </ProjectCard>
+
+      <ProjectCard
+        title="Vidocracy"
+        leftButtonHref="http://vidocracy.tannerkrewson.com/"
+        leftButtonText="Try Vidocracy"
+        rightButtonHref="https://github.com/tannerkrewson/vidocracy"
+        rightButtonText="View on GitHub"
+      >
+        Bring democracy to your party's YouTube videos! Open Vidocracy in your phone's browser, and start voting on videos and songs to be played on the big screen.
+      </ProjectCard>
+
+      <ProjectCard
+        title="Lansite"
+        leftButtonHref="https://github.com/tannerkrewson/lansite"
+        leftButtonText="View on GitHub"
+      >
+        Connect your LAN party attendees with announcements, private messaging, custom votes, and matchmaking. Lansite is fully modular and features extensive documentation, so hosts can effortlessly extend it to fit their needs.
+      </ProjectCard>
 
       <ProjectCard
         title="Red Team LAN"
@@ -395,14 +414,16 @@
       </ProjectCard>
 
       <ProjectCard
-        title="Lansite"
-        leftButtonHref="https://github.com/tannerkrewson/lansite"
-        leftButtonText="View on GitHub"
+        title="COVID-19 Stimulus Calculator"
+        leftButtonHref="https://www.tannerkrewson.com/coronacalc"
+        leftButtonText="Try it out"
+        rightButtonHref="https://github.com/tannerkrewson/coronacalc"
+        rightButtonText="View on GitHub"
       >
-        Connect your LAN party attendees with announcements, private messaging, custom votes, and matchmaking. Lansite is fully modular and features extensive documentation, so hosts can effortlessly extend it to fit their needs.
+        A simple quiz to see the difference in the stimulus check amount that one would receive under the final CARES act, versus the Democrats' original, failed act.
       </ProjectCard>
     </div>
-  </div>
+  {/if}
 </section>
 
 <!-- Footer -->
@@ -521,6 +542,20 @@
   }
   :global(.swal2-html-container a:hover) {
     text-decoration: underline !important;
+  }
+
+  .more-toggle {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    font-size: 14px;
+    cursor: pointer;
+    padding: 0;
+    letter-spacing: -0.35px;
+    transition: color 0.15s ease;
+  }
+  .more-toggle:hover {
+    color: var(--text-default);
   }
   :global(.swal2-image) {
     margin-top: -1.25em !important;
