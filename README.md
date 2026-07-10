@@ -4,23 +4,20 @@
 
 This is the source code of my personal website.
 
-It was originally built with [Jekyll](https://jekyllrb.com/), but has been ported to [Vue](https://vuejs.org/) & [Nuxt.js](https://nuxtjs.org/). It uses [Bootstrap 4](https://getbootstrap.com/), and [Typed.js](https://github.com/mattboldt/typed.js/) for the typing effect on the logo. It is hosted on [GitHub Pages](https://pages.github.com/).
+It was originally built with [Jekyll](https://jekyllrb.com/), then ported to [Vue](https://vuejs.org/) & [Nuxt.js](https://nuxtjs.org/). Now it uses [Svelte](https://svelte.dev/) & [SvelteKit](https://kit.svelte.dev/). It uses [Bootstrap 4](https://getbootstrap.com/), [SweetAlert2](https://sweetalert2.github.io/), [Typed.js](https://github.com/mattboldt/typed.js/) for the typing effect, and [Vanta.js](https://www.vantajs.com/) for the waves background. It is hosted on [GitHub Pages](https://pages.github.com/).
 
 ## Build Setup
 
 ```bash
 # install dependencies
-$ npm install
+npm install
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+# serve with hot reload at localhost:5173
+npm run dev
 
-# build for production and launch server
-$ npm run build
-$ npm run start
+# build for production
+npm run build
 
-# generate static project
-$ npm run generate
+# preview the built site
+npm run preview
 ```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).

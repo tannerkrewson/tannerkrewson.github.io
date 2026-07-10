@@ -3,10 +3,10 @@ name: github pages
 on:
   push:
     branches:
-      - dev
+      - main
 
 jobs:
-  deploy:
+  build_site:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -14,22 +14,30 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '16'
-
-      - name: Cache dependencies
-        uses: actions/cache@v4
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          node-version: '20'
+          cache: npm
 
       - run: npm ci
-      - run: npm run generate
+      - run: npm run build
 
-      - name: deploy
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Upload Artifacts
+        uses: actions/upload-pages-artifact@v5
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
-          publish_branch: master
+          path: 'build/'
+
+  deploy:
+    needs: build_site
+    runs-on: ubuntu-latest
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v5
