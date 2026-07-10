@@ -7,14 +7,13 @@
     leftButtonText = '',
     rightButtonHref = '',
     rightButtonText = '',
-    cardWidth = '6',
     rocketcrab = false,
     children
   } = $props();
 </script>
 
-<Card {cardWidth}>
-  <h3 class="card-title">
+<Card>
+  <h3 class="project-title">
     {title}
     {#if rocketcrab}
       <span class="rocketcrab-superscript">
@@ -22,31 +21,42 @@
       </span>
     {/if}
   </h3>
-  <p class="card-text">
+  <p class="project-desc">
     {@render children?.()}
   </p>
-  <div>
+  <div class="project-actions">
     <a href={leftButtonHref} target="_blank">
-      <button type="button" class="btn btn-outline-light">
-        {leftButtonText}
-      </button>
+      <button type="button" class="btn-secondary">{leftButtonText}</button>
     </a>
     {#if rightButtonHref}
       <a href={rightButtonHref} target="_blank">
-        <button type="button" class="btn btn-outline-light">
-          {rightButtonText}
-        </button>
+        <button type="button" class="btn-secondary">{rightButtonText}</button>
       </a>
     {/if}
   </div>
 </Card>
 
 <style>
-  .card-title {
-    font-family: 'Jost', sans-serif;
-    font-size: 2rem;
-    font-weight: 500;
-    font-style: italic;
+  .project-title {
+    font-family: var(--font-serif);
+    font-size: 21px;
+    font-weight: 400;
+    color: var(--text-strong);
+    margin-bottom: 8px;
+  }
+
+  .project-desc {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-default);
+    margin-bottom: 16px;
+    letter-spacing: -0.4px;
+  }
+
+  .project-actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
   }
 
   .rocketcrab-superscript {

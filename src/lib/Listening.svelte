@@ -48,7 +48,6 @@
   function timeSince(date) {
     const seconds = Math.floor(new Date().getTime() / 1000 - date);
     let interval = Math.floor(seconds / 31536000);
-
     if (interval > 1) return interval + ' year';
     interval = Math.floor(seconds / 2592000);
     if (interval > 1) return interval + ' minute';
@@ -58,30 +57,36 @@
     if (interval >= 1) return interval + ' hour';
     interval = Math.floor(seconds / 60);
     if (interval > 1) return interval + ' minute';
-
     return Math.floor(seconds) + ' second';
   }
 </script>
 
-<div id="current-song">
-  <span class="avoidwrap">{listenText}</span>
-  <span class="avoidwrap">
-    <a
-      target="_blank"
-      href={'//www.youtube.com/results?search_query=' + theTitle + '+' + theArtist}
-      >{theTitle}</a
-    >
-    {#if theArtist}by{/if}
-    <i>{theArtist}</i>
-  </span>
+<div class="listening">
+  <span>{listenText}</span>
+  <a
+    target="_blank"
+    href={'//www.youtube.com/results?search_query=' + theTitle + '+' + theArtist}
+    >{theTitle}</a
+  >
+  {#if theArtist}<span>by</span>{/if}
+  <em>{theArtist}</em>
 </div>
 
 <style>
-  #current-song {
-    margin-top: 22px;
+  .listening {
+    margin-top: 12px;
+    font-size: 14px;
+    color: var(--text-muted);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px;
   }
-
-  #current-song a {
+  .listening a {
+    color: var(--text-display-accent);
     text-decoration: underline;
+  }
+  .listening em {
+    font-style: italic;
   }
 </style>

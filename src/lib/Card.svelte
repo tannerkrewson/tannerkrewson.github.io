@@ -1,11 +1,16 @@
 <script>
-  let { cardWidth = '6', children } = $props();
+  let { children } = $props();
 </script>
 
-<div class="col-md-{cardWidth} card-col">
-  <div class="card">
-    <div class="card-block">
-      {@render children?.()}
-    </div>
-  </div>
+<div class="card">
+  {@render children?.()}
 </div>
+
+<style>
+  .card {
+    background: var(--surface-elevated);
+    border: 1px solid var(--line-subtle);
+    border-radius: 4px;
+    padding: 24px;
+  }
+</style>
