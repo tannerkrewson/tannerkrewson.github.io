@@ -558,6 +558,7 @@
     color: var(--text-muted);
   }
   :global(.swal2-image) {
+    margin-top: -1.25em !important;
     border-radius: 4px 4px 0 0 !important;
   }
 </style>
