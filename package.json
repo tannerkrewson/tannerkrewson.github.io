@@ -13,9 +13,7 @@
   "dependencies": {
     "js-cookie": "^3.0.5",
     "sweetalert2": "^11.12.4",
-    "three": "^0.168.0",
-    "typed.js": "^2.1.0",
-    "vanta": "^0.5.24"
+    "typed.js": "^2.1.0"
   },
   "devDependencies": {
     "@sveltejs/adapter-static": "^3.0.8",

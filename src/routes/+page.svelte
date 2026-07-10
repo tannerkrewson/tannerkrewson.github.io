@@ -1,7 +1,5 @@
 <script>
   import { onMount } from 'svelte';
-  import * as THREE from 'three';
-  import WAVES from 'vanta/dist/vanta.waves.min';
   import Cookies from 'js-cookie';
   import Typed from 'typed.js';
   import Swal from 'sweetalert2';
@@ -22,17 +20,8 @@
   let year = $state(new Date().getFullYear());
 
   let typed;
-  let vantaEffect;
 
   onMount(() => {
-    vantaEffect = WAVES({
-      el: document.getElementById('vanta'),
-      THREE,
-      mouseControls: false,
-      touchControls: false,
-      color: '#bca37f'
-    });
-
     const shouldPlayAnimation = !(Cookies.get('typed') === 'true');
     const sixteenHours = 16 / 24;
     Cookies.set('typed', 'true', { expires: sixteenHours });
@@ -55,7 +44,6 @@
 
     return () => {
       if (typed) typed.destroy();
-      if (vantaEffect) vantaEffect.destroy();
     };
   });
 
@@ -187,7 +175,6 @@
     style="background-color: {startBackgroundColor};"
     class:transition={startTransition}
   ></div>
-  <div id="vanta" class="stationary-background"></div>
   <div class="container">
     <div class="full-title">
       <div class="profile">
