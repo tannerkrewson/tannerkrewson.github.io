@@ -1,4 +1,6 @@
 <script>
+  import Footer from '$lib/Footer.svelte';
+
   let { children } = $props();
 </script>
 
@@ -8,6 +10,8 @@
 
 <div class="page">
   {@render children?.()}
+
+  <Footer />
 </div>
 
 <!-- Modal teleport target -->
@@ -50,7 +54,8 @@
     font-family: var(--font-sans);
     font-size: 14px;
     line-height: 1.7;
-    width: min(100%, 42rem);
+    width: 100%;
+    max-width: var(--page-max-width, 42rem);
     margin: 0;
     padding: 0 1.5rem;
     background: var(--surface-page);

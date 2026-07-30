@@ -1,8 +1,8 @@
 <script>
+  import { base } from '$app/paths';
   import Modal from '$lib/Modal.svelte';
   import Listening from '$lib/Listening.svelte';
 
-  let year = $state(new Date().getFullYear());
   let showOutdated = $state(false);
 
   // --- Projects ---
@@ -243,12 +243,29 @@
   <div class="listening-wrapper">
     <Listening />
   </div>
+
+  <nav class="site-nav" aria-label="Navigation">
+    <a href={`${base}/blog`} class="link-accent">blog</a>
+    <span class="contact-sep">/</span>
+    <a href="mailto:tannerkrewson@gmail.com" class="link-accent">email</a>
+    <span class="contact-sep">/</span>
+    <a href="https://github.com/tannerkrewson/" target="_blank" class="link-accent">github</a>
+    <span class="contact-sep">/</span>
+    <a href="https://www.linkedin.com/in/tannerkrewson/" target="_blank" class="link-accent">linkedin</a>
+    <span class="contact-sep">/</span>
+    <a href="https://vsco.co/tannerkrewson/gallery" target="_blank" class="link-accent">vsco</a>
+    <span class="contact-sep">/</span>
+    <a href="https://www.last.fm/user/TankTan38" target="_blank" class="link-accent">last.fm</a>
+    <span class="contact-sep">/</span>
+    <a href="https://letterboxd.com/tannerkrewson/" target="_blank" class="link-accent">letterboxd</a>
+  </nav>
 </section>
 
 <div class="divider">==============================</div>
 
 <!-- ========== CURRENT ROLE ========== -->
 <section id="current-role" aria-label="Current role">
+  <h2 class="section-title">Current Role</h2>
   <p class="role-org">
     <!-- svelte-ignore a11y_invalid_attribute -->
     <a
@@ -346,36 +363,7 @@
   </div>
 </section>
 
-<div class="divider">==============================</div>
 
-<!-- ========== CONTACT ========== -->
-<section id="contact" aria-label="Contact">
-  <h2 class="section-title">Contact</h2>
-  <p class="contact-links">
-    <a href="mailto:tannerkrewson@gmail.com" class="link-accent">email</a>
-    <span class="contact-sep">/</span>
-    <a href="https://github.com/tannerkrewson/" target="_blank" class="link-accent">github</a>
-    <span class="contact-sep">/</span>
-    <a href="https://www.linkedin.com/in/tannerkrewson/" target="_blank" class="link-accent">linkedin</a>
-    <span class="contact-sep">/</span>
-    <a href="https://vsco.co/tannerkrewson/gallery" target="_blank" class="link-accent">vsco</a>
-    <span class="contact-sep">/</span>
-    <a href="https://www.last.fm/user/TankTan38" target="_blank" class="link-accent">last.fm</a>
-    <span class="contact-sep">/</span>
-    <a href="https://letterboxd.com/tannerkrewson/" target="_blank" class="link-accent">letterboxd</a>
-  </p>
-</section>
-
-<div class="divider">==============================</div>
-
-<!-- ========== FOOTER ========== -->
-<footer aria-label="Site footer">
-  <p class="footer-text">
-    <span class="footer-year">tannerkrewson, {year}</span>
-    <span class="footer-sep"> / </span>
-    <a href="https://github.com/tannerkrewson/tannerkrewson.github.io" target="_blank" class="link-accent">source</a>
-  </p>
-</footer>
 
 <!-- ========== INTERNSHIP MODAL ========== -->
 <Modal bind:isOpen={intModal} title={intModal ? internshipModals[intModal]?.title || '' : ''}>
@@ -405,6 +393,15 @@
   .listening-wrapper {
     font-size: 0.8rem;
     margin-top: 0.5rem;
+  }
+
+  .site-nav {
+    margin-top: 1.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
   }
 
   /* --- Current Role --- */
@@ -451,7 +448,6 @@
     font-size: 0.75rem;
     font-weight: 400;
     color: var(--text-muted);
-    text-transform: uppercase;
     letter-spacing: 0.05em;
     margin-bottom: 1.5rem;
   }
@@ -551,36 +547,10 @@
     color: var(--text-muted);
   }
 
-  /* --- Contact --- */
-  .contact-links {
-    font-family: var(--font-mono);
-    font-size: 0.85rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.25rem;
-  }
-
   .contact-sep {
     color: var(--text-muted);
     margin: 0 0.25rem;
   }
 
-  /* --- Footer --- */
-  footer {
-    margin-top: 0;
-  }
 
-  .footer-text {
-    font-family: var(--font-mono);
-    font-size: 0.7rem;
-    color: var(--text-muted);
-  }
-
-  .footer-year {
-    color: var(--text-muted);
-  }
-
-  .footer-sep {
-    color: var(--text-muted);
-  }
 </style>
