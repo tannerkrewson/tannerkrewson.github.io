@@ -79,7 +79,7 @@
     color: var(--text-muted);
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 4px;
   }
   .listening a {
