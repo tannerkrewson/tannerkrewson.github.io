@@ -164,7 +164,6 @@
         pandemic, but in July 2021, I moved to New York City. I am on the Web
         Playback Experience team, which develops the web browser video player
         for Disney+, Hulu, ESPN+, Star+, and NHL.TV.</p>
-        <img src="https://i.imgur.com/wsHJaI0.jpg" alt="Disney Streaming office view" />
       `
     },
     'dss-intern': {
@@ -176,7 +175,6 @@
         disneyplus.com on AWS. I also created an internal tool with Next.js
         and React to quickly find and view information about any microservice
         in the company.</p>
-        <img src="https://i.imgur.com/dmIzkPU.png" alt="Disney Streaming office" />
       `
     },
     'gs': {
@@ -188,7 +186,6 @@
         Automation team. My project was to redesign an existing dashboard for
         compliance officers to easily see what trades they need to review. I
         did it with React, Redux, and a bit of Java.</p>
-        <img src="https://i.imgur.com/hYkR64w.jpg" alt="Goldman Sachs office" />
       `
     },
     'disney': {
@@ -206,7 +203,6 @@
           <li>Designed an easter egg that reveals the developers' names when activated</li>
           <li>Made many bug fixes and minor features across legacy PHP and Angular 1 codebases</li>
         </ul>
-        <img src="https://i.imgur.com/Rzpnv4A.jpg" alt="Disney office in Seattle" />
       `
     },
     'espn': {
@@ -225,7 +221,6 @@
           <li>Wrote new features in React for a tool used by editors to write and publish articles</li>
           <li>Navigated a legacy code base written with a proprietary back-end language called Tea</li>
         </ul>
-        <img src="https://i.imgur.com/aYKfZ62.jpg" alt="ESPN headquarters" />
       `
     }
   };
