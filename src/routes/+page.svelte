@@ -291,9 +291,9 @@
 
 <!-- ========== PROJECTS ========== -->
 <section id="projects" aria-label="Projects">
-  <h2 class="section-title">Pre-AI Projects</h2>
+  <h2 class="section-title">AI-Era Projects</h2>
 
-  {#each allProjects as project}
+  {#each aiEraProjects as project}
     <article class="project-entry">
       <p class="project-head">
         <span class="project-name">{project.title}</span>
@@ -312,10 +312,10 @@
   {/each}
 
   <div class="project-group-title">
-    <h2 class="section-title">AI-Era Projects</h2>
+    <h2 class="section-title">Pre-AI Projects</h2>
   </div>
 
-  {#each aiEraProjects as project}
+  {#each allProjects as project}
     <article class="project-entry">
       <p class="project-head">
         <span class="project-name">{project.title}</span>
