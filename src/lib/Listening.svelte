@@ -75,7 +75,7 @@
 <style>
   .listening {
     margin-top: 12px;
-    font-size: 14px;
+    font-size: 15px;
     color: var(--text-muted);
     display: flex;
     flex-wrap: wrap;

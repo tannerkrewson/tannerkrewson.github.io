@@ -33,7 +33,7 @@
     --line-subtle: rgba(180, 180, 180, 0.18);
     --line-panel: #666666;
 
-    /* typography — kept as-is per request */
+    /* typography */
     --font-sans: "IBM Plex Sans", system-ui, sans-serif;
     --font-serif: "IBM Plex Serif", Georgia, serif;
     --font-mono: "IBM Plex Mono", ui-monospace, monospace;
@@ -52,7 +52,7 @@
 
   :global(body) {
     font-family: var(--font-sans);
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.7;
     width: 100%;
     max-width: var(--page-max-width, 42rem);

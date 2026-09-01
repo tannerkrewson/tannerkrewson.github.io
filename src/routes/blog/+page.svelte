@@ -72,7 +72,7 @@
 
   .blog-index nav a {
     font-family: var(--font-mono);
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: var(--text-muted);
     transition: color 0.1s ease;
   }
@@ -87,7 +87,7 @@
 
   .blog-index h1 {
     font-family: var(--font-serif);
-    font-size: 1.75rem;
+    font-size: 1.9rem;
     font-weight: 400;
     color: var(--text-strong);
     margin-bottom: 0.5rem;
@@ -107,14 +107,14 @@
 
   .post-date {
     font-family: var(--font-mono);
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     color: var(--text-muted);
     margin-bottom: 0.3rem;
   }
 
   .post-card h2 {
     font-family: var(--font-serif);
-    font-size: 1.15rem;
+    font-size: 1.25rem;
     font-weight: 400;
     margin-bottom: 0.4rem;
     line-height: 1.3;
@@ -131,7 +131,7 @@
   }
 
   .post-card > p {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     line-height: 1.6;
     color: var(--text-default);
   }

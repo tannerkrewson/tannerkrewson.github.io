@@ -15,7 +15,7 @@
 <style>
   .divider {
     font-family: var(--font-mono);
-    font-size: 0.65rem;
+    font-size: 0.7rem;
     color: rgba(128, 128, 128, 0.25);
     letter-spacing: 0.05em;
     margin: 2.5rem 0;
@@ -28,7 +28,7 @@
 
   .footer-text {
     font-family: var(--font-mono);
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     color: var(--text-muted);
   }
 

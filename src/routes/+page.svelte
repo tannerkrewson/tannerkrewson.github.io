@@ -376,7 +376,7 @@
   /* --- Intro --- */
   .intro-name {
     font-family: var(--font-serif);
-    font-size: 1.75rem;
+    font-size: 1.9rem;
     font-weight: 400;
     color: var(--text-strong);
     margin-bottom: 0.25rem;
@@ -385,20 +385,20 @@
 
   .intro-tag {
     font-family: var(--font-mono);
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: var(--text-muted);
     margin-bottom: 0.5rem;
   }
 
   .listening-wrapper {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     margin-top: 0.5rem;
   }
 
   .site-nav {
     margin-top: 1.5rem;
     font-family: var(--font-mono);
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     display: flex;
     flex-wrap: wrap;
     gap: 0.25rem;
@@ -411,7 +411,7 @@
 
   .role-link {
     font-family: var(--font-serif);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: var(--text-strong);
   }
 
@@ -421,21 +421,21 @@
 
   .role-title {
     font-family: var(--font-mono);
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: var(--text-muted);
     margin-bottom: 0;
   }
 
   .role-year {
     font-family: var(--font-mono);
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     color: var(--text-muted);
   }
 
   /* --- Section dividers --- */
   .divider {
     font-family: var(--font-mono);
-    font-size: 0.65rem;
+    font-size: 0.7rem;
     color: rgba(128, 128, 128, 0.25);
     letter-spacing: 0.05em;
     margin: 2.5rem 0;
@@ -445,7 +445,7 @@
   /* --- Section titles --- */
   .section-title {
     font-family: var(--font-mono);
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     font-weight: 400;
     color: var(--text-muted);
     letter-spacing: 0.05em;
@@ -453,7 +453,7 @@
   }
 
   .internships-title {
-    font-size: 0.65rem;
+    font-size: 0.7rem;
     color: var(--text-muted);
     margin-bottom: 1rem;
   }
@@ -477,18 +477,18 @@
 
   .project-name {
     font-family: var(--font-serif);
-    font-size: 1.05rem;
+    font-size: 1.15rem;
     color: var(--text-strong);
   }
 
   .project-date {
     font-family: var(--font-mono);
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     color: var(--text-muted);
   }
 
   .project-description {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     line-height: 1.6;
     color: var(--text-default);
     margin-bottom: 0.25rem;
@@ -496,7 +496,7 @@
 
   .project-links {
     font-family: var(--font-mono);
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     display: flex;
     flex-wrap: wrap;
     gap: 0.25rem;
@@ -514,7 +514,7 @@
 
   .outdated-link {
     font-family: var(--font-mono);
-    font-size: 0.75rem;
+    font-size: 0.8rem;
   }
 
   /* --- Internships --- */
@@ -525,7 +525,7 @@
   }
 
   .intern-entry {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: var(--text-muted);
   }
 
@@ -543,7 +543,7 @@
 
   .intern-year {
     font-family: var(--font-mono);
-    font-size: 0.7rem;
+    font-size: 0.75rem;
     color: var(--text-muted);
   }
 

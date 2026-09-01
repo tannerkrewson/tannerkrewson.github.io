@@ -130,7 +130,7 @@
 
   .modal-title {
     font-family: var(--font-serif);
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     font-weight: 400;
     color: var(--text-strong);
     line-height: 1.3;
@@ -138,7 +138,7 @@
 
   .close-link {
     font-family: var(--font-mono);
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     color: var(--text-muted);
     white-space: nowrap;
     flex-shrink: 0;
@@ -149,7 +149,7 @@
   }
 
   .modal-body {
-    font-size: 0.875rem;
+    font-size: 0.95rem;
     line-height: 1.7;
     color: var(--text-default);
   }
@@ -192,7 +192,7 @@
   .modal-body :global(.detail-label) {
     color: var(--text-muted);
     font-family: var(--font-mono);
-    font-size: 0.75rem;
+    font-size: 0.8rem;
   }
 
   .modal-body :global(.detail-row) {

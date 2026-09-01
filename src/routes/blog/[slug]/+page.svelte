@@ -76,7 +76,7 @@
 
   .blog-post nav a {
     font-family: var(--font-mono);
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: var(--text-muted);
     transition: color 0.1s ease;
   }
@@ -87,7 +87,7 @@
 
   .breadcrumb-sep {
     font-family: var(--font-mono);
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: var(--text-muted);
     margin: 0 0.35rem;
   }
@@ -100,7 +100,7 @@
 
   .post-header h1 {
     font-family: var(--font-serif);
-    font-size: 1.75rem;
+    font-size: 1.9rem;
     font-weight: 400;
     color: var(--text-strong);
     margin-bottom: 0.5rem;
@@ -109,7 +109,7 @@
 
   .post-date {
     font-family: var(--font-mono);
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     color: var(--text-muted);
     margin-bottom: 0.75rem;
     display: flex;
@@ -127,14 +127,14 @@
   }
 
   .post-content {
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.8;
     color: var(--text-default);
   }
 
   .post-content :global(h2) {
     font-family: var(--font-serif);
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     font-weight: 400;
     color: var(--text-strong);
     margin-top: 2rem;
@@ -144,7 +144,7 @@
 
   .post-content :global(h3) {
     font-family: var(--font-serif);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 400;
     color: var(--text-strong);
     margin-top: 1.75rem;
@@ -154,7 +154,7 @@
 
   .post-content :global(h4) {
     font-family: var(--font-serif);
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 400;
     color: var(--text-strong);
     margin-top: 1.5rem;
@@ -196,7 +196,7 @@
 
   .post-content :global(code) {
     font-family: var(--font-mono);
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     background: var(--surface-elevated);
     padding: 0.1rem 0.35rem;
     border: 1px solid var(--line-subtle);
@@ -214,7 +214,7 @@
     background: none;
     border: none;
     padding: 0;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     line-height: 1.6;
   }
 
@@ -236,7 +236,7 @@
     width: 100%;
     border-collapse: collapse;
     margin: 1.25rem 0;
-    font-size: 0.85rem;
+    font-size: 0.95rem;
   }
 
   .post-content :global(th),
