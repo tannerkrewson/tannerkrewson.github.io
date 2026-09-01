@@ -16,7 +16,7 @@
   .divider {
     font-family: var(--font-mono);
     font-size: 0.65rem;
-    color: rgba(114, 122, 137, 0.25);
+    color: rgba(128, 128, 128, 0.25);
     letter-spacing: 0.05em;
     margin: 2.5rem 0;
     user-select: none;

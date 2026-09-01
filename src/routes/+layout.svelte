@@ -19,19 +19,19 @@
 
 <style>
   :root {
-    /* palette — dark (existing colors, unchanged) */
-    --surface-page: #111612;
-    --surface-deep: #000a04;
-    --surface-elevated: #181f1a;
-    --surface-nav: #121714;
+    /* palette — dark monochrome */
+    --surface-page: #111111;
+    --surface-deep: #000000;
+    --surface-elevated: #1a1a1a;
+    --surface-nav: #141414;
     --text-strong: #ffffff;
-    --text-default: #a8adb7;
-    --text-muted: #727a89;
-    --text-display-accent: #8ec5ff;
-    --action-primary: #155dfc;
-    --brand-blue: #1348dc;
-    --line-subtle: rgba(114, 122, 137, 0.14);
-    --line-panel: #464b57;
+    --text-default: #b8b8b8;
+    --text-muted: #808080;
+    --text-display-accent: #d6d6d6;
+    --action-primary: #ffffff;
+    --brand-contrast: #bdbdbd;
+    --line-subtle: rgba(180, 180, 180, 0.18);
+    --line-panel: #666666;
 
     /* typography — kept as-is per request */
     --font-sans: "IBM Plex Sans", system-ui, sans-serif;
