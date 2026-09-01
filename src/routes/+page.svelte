@@ -89,6 +89,18 @@
     }
   ];
 
+  const aiEraProjects = [
+    {
+      title: 'Bench Bus',
+      date: '2026',
+      description: 'Bench Bus compares AI model benchmark scores with the estimated cost of each benchmark workload. It is a static site that collects benchmark and pricing data on a schedule.',
+      links: [
+        { href: 'https://benchb.us/', text: 'Try it out' },
+        { href: 'https://github.com/tannerkrewson/bench-bus', text: 'View on GitHub' }
+      ]
+    }
+  ];
+
   const outdatedProjects = [
     {
       title: 'Mutual Music',
@@ -299,6 +311,28 @@
     </article>
   {/each}
 
+  <div class="project-group-title">
+    <h2 class="section-title">AI-Era Projects</h2>
+  </div>
+
+  {#each aiEraProjects as project}
+    <article class="project-entry">
+      <p class="project-head">
+        <span class="project-name">{project.title}</span>
+        <span class="project-date"> / {project.date}</span>
+      </p>
+      <p class="project-description">{project.description}</p>
+      <p class="project-links">
+        {#each project.links as link, i}
+          {#if i > 0}
+            <span class="link-sep">/</span>
+          {/if}
+          <a href={link.href} target="_blank" class="link-accent">{link.text} →</a>
+        {/each}
+      </p>
+    </article>
+  {/each}
+
   <!-- Outdated toggle -->
   <div class="outdated-toggle">
     <!-- svelte-ignore a11y_invalid_attribute -->
@@ -456,6 +490,10 @@
   /* --- Project entries --- */
   .project-entry {
     margin-bottom: 1.75rem;
+  }
+
+  .project-group-title {
+    margin-top: 3rem;
   }
 
   .project-entry:last-child {
